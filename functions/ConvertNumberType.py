@@ -1,4 +1,4 @@
-def ConvertNumTypes(nums):
+def ConvertNumberType(nums):
     nums = nums.replace(',', '.')
     try:
         number = float(nums)
