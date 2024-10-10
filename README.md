@@ -17,12 +17,12 @@
 
 1. Клонувати репозиторій:
     ```bash
-    git clone https://github.com/yourusername/ascii_art_generator.git
+    [git clone https://github.com/FREEGREAT/DegraCalc.git]
     ```
 
 2. Перейти до каталогу проекту:
     ```bash
-    cd ascii_art_generator
+    cd DegraCalc
     ```
 
 3. Встановіть пакет:
@@ -35,10 +35,10 @@
 Після встановлення модуля ви можете імпортувати його у вашому Python-скрипті та використовувати функції для генерації ASCII-арт. Ось приклад використання:
 
 ```python
-from art_generators.square import generate_square
+from art_generator.square import generate_square
 from utils.save_art import save_art_to_file
 
-# Генерація квадрата розміром 5
+# Генерація квадрата розміром 5*5
 art = generate_square(5)
 
 # Збереження арт-файлу
