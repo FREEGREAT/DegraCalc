@@ -7,9 +7,7 @@
 - [Встановлення](#встановлення)
 - [Використання](#використання)
 - [Приклади](#приклади)
-- [Тестування](#тестування)
-- [Внесок](#внесок)
-- [Ліцензія](#ліцензія)
+
 
 ## Встановлення
 
@@ -17,12 +15,12 @@
 
 1. Клонувати репозиторій:
     ```bash
-    [git clone https://github.com/FREEGREAT/DegraCalc.git]
+    git clone https://github.com/yourusername/ascii_art_generator.git
     ```
 
 2. Перейти до каталогу проекту:
     ```bash
-    cd DegraCalc
+    cd ascii_art_generator
     ```
 
 3. Встановіть пакет:
@@ -35,11 +33,22 @@
 Після встановлення модуля ви можете імпортувати його у вашому Python-скрипті та використовувати функції для генерації ASCII-арт. Ось приклад використання:
 
 ```python
-from art_generator.square import generate_square
+from art_generators.square import generate_square
 from utils.save_art import save_art_to_file
 
-# Генерація квадрата розміром 5*5
+# Генерація квадрата розміром 5
 art = generate_square(5)
 
 # Збереження арт-файлу
 save_art_to_file(art, "square.txt")
+```
+
+## Приклади
+
+Ви можете створити кілька різних фігур, використовуючи інтерфейс користувача. Запустіть програму:
+
+```bash
+python -m ui.user_interface
+```
+
+
