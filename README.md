@@ -15,12 +15,12 @@
 
 1. Клонувати репозиторій:
     ```bash
-    git clone https://github.com/yourusername/ascii_art_generator.git
+    git clone https://github.com/freegreat/DegraCalc.git
     ```
 
 2. Перейти до каталогу проекту:
     ```bash
-    cd ascii_art_generator
+    cd DegraCalc
     ```
 
 3. Встановіть пакет:
