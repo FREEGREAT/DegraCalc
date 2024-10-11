@@ -7,9 +7,7 @@
 - [Встановлення](#встановлення)
 - [Використання](#використання)
 - [Приклади](#приклади)
-- [Тестування](#тестування)
-- [Внесок](#внесок)
-- [Ліцензія](#ліцензія)
+
 
 ## Встановлення
 
@@ -17,12 +15,12 @@
 
 1. Клонувати репозиторій:
     ```bash
-    git clone https://github.com/yourusername/ascii_art_generator.git
+    git clone https://github.com/freegreat/DegraCalc.git
     ```
 
 2. Перейти до каталогу проекту:
     ```bash
-    cd ascii_art_generator
+    cd DegraCalc
     ```
 
 3. Встановіть пакет:
@@ -43,3 +41,13 @@ art = generate_square(5)
 
 # Збереження арт-файлу
 save_art_to_file(art, "square.txt")
+```
+
+## Приклади
+
+Ви можете створити кілька різних фігур, використовуючи інтерфейс користувача. Запустіть програму:
+
+```bash
+python -m ui.user_interface
+```
+
