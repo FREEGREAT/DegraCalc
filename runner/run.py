@@ -2,7 +2,6 @@
 import sys
 import os
 
-# Додає головну директорію проекту до шляхів Python
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from user_interface.user_interface import UserInterface
 def run_ascii_art_generator():
@@ -22,7 +21,6 @@ def run_ascii_art_generator():
 def main():
     labs = [
         {"name": "Генератор ASCII-арту", "function": run_ascii_art_generator},
-        # Додавайте нові лабораторні роботи тут у форматі:
         # {"name": "Назва лабораторної", "function": ваша_функція}
     ]
     
