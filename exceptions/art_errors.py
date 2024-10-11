@@ -1,5 +1,4 @@
 class ArtGenerationError(Exception):
-    """Клас помилок, пов'язаних з генерацією фігур ASCII."""
     
     def __init__(self, message="Помилка під час генерації фігури ASCII"):
         self.message = message

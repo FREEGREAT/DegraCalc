@@ -2,9 +2,8 @@ from utils.clear import clear_console
 
 def display_ascii_art(art, color="bw", symbol="@", alignment="left"):
     try:
-        clear_console()  # Очищення екрану
+        clear_console() 
 
-        # Налаштування кольорів
         if color == "purple":
             symbol = '\033[35m' + symbol + '\033[0m'
         elif color == "green":
@@ -14,9 +13,8 @@ def display_ascii_art(art, color="bw", symbol="@", alignment="left"):
         elif color == "red":
             symbol = '\033[31m' + symbol + '\033[0m'
 
-        max_width = len(art[0])  # Максимальна ширина для вирівнювання
+        max_width = len(art[0])  
 
-        # Виведення фігури з вирівнюванням
         for row in art:
             line = "".join([symbol if val == 1 else " " for val in row])
             line_len = len(line)
@@ -27,7 +25,6 @@ def display_ascii_art(art, color="bw", symbol="@", alignment="left"):
             elif alignment == "right":
                 padding = max_width - line_len
                 line = " " * padding + line
-
             print(line)
 
     except Exception as e:
