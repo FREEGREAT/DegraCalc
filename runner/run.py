@@ -1,20 +1,18 @@
-
 import sys
 import os
-
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from user_interface.user_interface import UserInterface
+
 def run_ascii_art_generator():
     try:
         ui = UserInterface()
         color = ui.get_user_input()
-        
         if color:
             ui.preview_ascii_art(color)
-            
             save = input("Бажаєте зберегти ASCII-арт? (y/n): ").lower()
             if save == 'y':
                 ui.save_ascii_art()
+
     except Exception as e:
         print(f"Сталася помилка під час виконання генератора ASCII-арту: {str(e)}")
 
@@ -23,7 +21,7 @@ def main():
         {"name": "Генератор ASCII-арту", "function": run_ascii_art_generator},
         # {"name": "Назва лабораторної", "function": ваша_функція}
     ]
-    
+     
     while True:
         print("\nВиберіть лабораторну роботу для запуску:")
         for i, lab in enumerate(labs, start=1):
