@@ -7,11 +7,10 @@ import time
 if __name__ == "__main__":
     user_input = UserInput(None)
 
-    # Запитуємо початкові розміри куба
     size_x, size_y, size_z = user_input.get_initial_size()
     cube = Cube(size_x, size_y, size_z)
-    user_input.cube = cube  # Передаємо створений куб у контролер користувача
-
+    user_input.cube = cube  
+    
     renderer = Renderer(resolution=40, foco=40, y_distorter=1.1, left_right=1.5, up_down=0.5)
 
     try:
@@ -20,11 +19,8 @@ if __name__ == "__main__":
             rotated_cube = cube.rotate()
             projection = renderer.project(rotated_cube)
             lines = renderer.get_lines(projection)
-            rendered_ascii = renderer.render(projection, lines)
-
+            rendered_ascii = renderer.render(projection, lines, cube.color)
             time.sleep(0.5)
-
-            # Запитуємо наступну дію
             action = user_input.get_next_action()
 
             if action == "1":
