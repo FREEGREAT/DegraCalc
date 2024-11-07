@@ -14,7 +14,6 @@ class TestCalculator(unittest.TestCase):
         self.calculator = Calculator()
         self.memory = Memory()
 
-    # Завдання 1: Тестування Додавання
     def test_addition_positive_numbers(self):
         self.assertEqual(self.calculator.Add(3, 5), 8)
     
@@ -24,14 +23,12 @@ class TestCalculator(unittest.TestCase):
     def test_addition_positive_and_negative(self):
         self.assertEqual(self.calculator.Add(-3, 5), 2)
 
-    # Завдання 2: Тестування Віднімання
     def test_subtraction_positive_numbers(self):
         self.assertEqual(self.calculator.Subtract(10, 5), 5)
 
     def test_subtraction_negative_result(self):
         self.assertEqual(self.calculator.Subtract(5, 10), -5)
 
-    # Завдання 3: Тестування Множення
     def test_multiplication_with_zero(self):
         self.assertEqual(self.calculator.Multiply(5, 0), 0)
 
@@ -41,7 +38,6 @@ class TestCalculator(unittest.TestCase):
     def test_multiplication_negative_numbers(self):
         self.assertEqual(self.calculator.Multiply(-3, -5), 15)
 
-    # Завдання 4: Тестування Ділення
     def test_division_positive_numbers(self):
         self.assertEqual(self.calculator.Divide(10, 2), 5)
 
@@ -51,7 +47,6 @@ class TestCalculator(unittest.TestCase):
     def test_division_negative_result(self):
         self.assertEqual(self.calculator.Divide(-10, 2), -5)
 
-    # Завдання 5: Тестування Обробки Помилок
     def test_division_by_zero_error_handling(self):
         self.assertEqual(self.calculator.Divide(5, 0), "Error: x/0")
 
@@ -59,14 +54,11 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             ConvertNumberType("invalid")
 
-    # Тестування функцій історії
     def test_get_history(self):
-        # Adding an entry to history
         self.calculator.Add(1, 1)
         with open("History.txt", "r") as file:
             self.assertIn("1 + 1 = 2", file.read())
-
-    # Тести для Memory класу
+    
     def test_memory_add(self):
         self.memory.Add(10)
         self.assertEqual(self.memory.Read(), 10)

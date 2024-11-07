@@ -88,3 +88,165 @@ Memory subtracted: 5
 5 * 0 = 0
 5 - 10 = -5
 10 - 5 = 5
+-3 + -5 = -8
+-3 + 5 = 2
+3 + 5 = 8
+5 / 0 = Error: x/0
+-10 / 2 = -5.0
+10 / 2 = 5.0
+10 / 0 = Error: x/0
+1 + 1 = 2
+Memory added: 10
+Memory added: 10
+Memory cleared
+Memory added: 10
+Memory subtracted: 5
+-3 * -5 = 15
+3 * 5 = 15
+5 * 0 = 0
+5 - 10 = -5
+10 - 5 = 5
+-3 + -5 = -8
+-3 + 5 = 2
+3 + 5 = 8
+5 / 0 = Error: x/0
+-10 / 2 = -5.0
+10 / 2 = 5.0
+10 / 0 = Error: x/0
+1 + 1 = 2
+Memory added: 10
+Memory added: 10
+Memory cleared
+Memory added: 10
+Memory subtracted: 5
+-3 * -5 = 15
+3 * 5 = 15
+5 * 0 = 0
+5 - 10 = -5
+10 - 5 = 5
+-3 + -5 = -8
+-3 + 5 = 2
+3 + 5 = 8
+5 / 0 = Error: x/
+-10 / 2 = -5.0
+10 / 2 = 5.0
+10 / 0 = Error: x/
+1 + 1 = 2
+Memory added: 10
+Memory added: 10
+Memory cleared
+Memory added: 10
+Memory subtracted: 5
+-3 * -5 = 15
+3 * 5 = 15
+5 * 0 = 0
+5 - 10 = -5
+10 - 5 = 5
+-3 + -5 = -8
+-3 + 5 = 2
+3 + 5 = 8
+5 / 0 = Error: x/
+-10 / 2 = -5.0
+10 / 2 = 5.0
+10 / 0 = Error: x/
+1 + 1 = 2
+Memory added: 10
+Memory added: 10
+Memory cleared
+Memory added: 10
+Memory subtracted: 5
+-3 * -5 = 15
+3 * 5 = 15
+5 * 0 = 0
+5 - 10 = -5
+10 - 5 = 5
+-3 + -5 = -8
+-3 + 5 = 2
+3 + 5 = 8
+5 / 0 = Error: x/0
+-10 / 2 = -5.0
+10 / 2 = 5.0
+10 / 0 = Error: x/0
+1 + 1 = 2
+Memory added: 10
+Memory added: 10
+Memory cleared
+Memory added: 10
+Memory subtracted: 5
+-3 * -5 = 15
+3 * 5 = 15
+5 * 0 = 0
+5 - 10 = -5
+10 - 5 = 5
+-3 + -5 = -8
+-3 + 5 = 2
+3 + 5 = 8
+5 / 0 = Error: x/0
+-10 / 2 = -5.0
+10 / 2 = 5.0
+10 / 0 = Error: x/0
+1 + 1 = 2
+Memory added: 10
+Memory added: 10
+Memory cleared
+Memory added: 10
+Memory subtracted: 5
+-3 * -5 = 15
+3 * 5 = 15
+5 * 0 = 0
+5 - 10 = -5
+10 - 5 = 5
+-3 + -5 = -8
+-3 + 5 = 2
+3 + 5 = 8
+5 / 0 = Error: x/0
+-10 / 2 = -5.0
+10 / 2 = 5.0
+10 / 0 = Error: x/0
+1 + 1 = 2
+Memory added: 10
+Memory added: 10
+Memory cleared
+Memory added: 10
+Memory subtracted: 5
+-3 * -5 = 15
+3 * 5 = 15
+5 * 0 = 0
+5 - 10 = -5
+10 - 5 = 5
+-3 + -5 = -8
+-3 + 5 = 2
+3 + 5 = 8
+5 / 0 = Error: x/0
+-10 / 2 = -5.0
+10 / 2 = 5.0
+10 / 0 = Error: x/0
+1 + 1 = 2
+Memory added: 10
+Memory added: 10
+Memory cleared
+Memory added: 10
+Memory subtracted: 5
+-3 * -5 = 15
+3 * 5 = 15
+5 * 0 = 0
+5 - 10 = -5
+10 - 5 = 5
+-3 + -5 = -8
+-3 + 5 = 2
+3 + 5 = 8
+5 / 0 = Error: x/0
+-10 / 2 = -5.0
+10 / 2 = 5.0
+10 / 0 = Error: x/0
+1 + 1 = 2
+Memory added: 10
+Memory added: 10
+Memory cleared
+Memory added: 10
+Memory subtracted: 5
+-3 * -5 = 15
+3 * 5 = 15
+5 * 0 = 0
+5 - 10 = -5
+10 - 5 = 5
