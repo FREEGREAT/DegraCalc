@@ -1,21 +1,13 @@
-# main.py
-from api.api_client import APIClient
-from api.repository import DataRepository
-from core.transaction import Transactions
-from ui.user_interface import UserInterface
-from core.error_handler import ErrorHandler
+from controllers.data_controller import DataController
+from ui.menu import display_menu, handle_choice
 
 def main():
-    try:
-        api_client = APIClient("https://jsonplaceholder.typicode.com")
-        repository = DataRepository(api_client)
-        transactions = Transactions()
-        ui = UserInterface(repository, transactions)
-        
-        ui.start()
-        transactions.save_history()
-    except Exception as e:
-        ErrorHandler.handle_error(e)
+    file_path = 'data/weather_data.csv'
+    controller = DataController(file_path)
+    
+    display_menu()
+    choice = input("Select an option: ")
+    handle_choice(choice, controller)
 
 if __name__ == "__main__":
     main()
