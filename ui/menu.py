@@ -7,30 +7,35 @@ def display_menu():
     print("3. Show Temperature vs Humidity Scatter Plot")
     print("4. Show Humidity Histogram")
     print("5. Show Multiple Subplots")
+    print("6. Export Chart as PNG")
 
-# ui/menu.py
 def handle_choice(choice, controller):
     if choice == '1':
         controller.display_extremes()
     elif choice == '2':
-        controller.plot_chart("line")  # Замість plot_line_chart
+        controller.plot_chart("line") 
     elif choice == '3':
-        controller.plot_chart("scatter")  # Замість plot_scatter_chart
+        controller.plot_chart("scatter")  
     elif choice == '4':
-        controller.plot_chart("histogram")  # Замість plot_histogram
+        controller.plot_chart("histogram")  
     elif choice == '5':
+        from views.subplots import plot_multiple_subplots
         plot_multiple_subplots(controller.data)
+    elif choice == '6':
+        export_chart_as_png(controller) 
     else:
         print("Invalid choice")
 
 
-# ui.py
-
-def export_visualization(controller, plot_type):
-    filename = input("Enter filename (without extension): ")
-    format = input("Choose format - PNG, SVG, or HTML: ").lower()
-
-    if format == "html":
-        controller.export_as_html(plot_type, filename)
+def export_chart_as_png(controller):
+    plot_type = input("Enter the type of chart to export (line, scatter, histogram): ").lower()
+    plot_instance = controller.get_plot_instance(plot_type)
+    
+    if plot_instance:
+        filename = input("Enter the filename (without extension): ")
+        print("Exporting chart as PNG...")
+        plot_instance.plot(controller.data)  
+        plot_instance.save(filename, format="png")
+        print(f"Chart exported as {filename}.png")
     else:
-        controller.export_as_image(plot_type, filename, format)
+        print("Invalid chart type. Please try again.")

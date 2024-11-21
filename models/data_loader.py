@@ -7,13 +7,13 @@ class DataLoader:
     def load_data(self):
         try:
             data = pd.read_csv(self.file_path)
-            # Перевірка колонок
+
             required_columns = {'Date', 'Temperature', 'Humidity', 'WindSpeed', 'Rainfall'}
             if not required_columns.issubset(data.columns):
                 raise ValueError(f"CSV файл повинен містити колонки: {', '.join(required_columns)}")
-            # Перетворення Date на datetime, якщо це необхідно
+
             data['Date'] = pd.to_datetime(data['Date'], errors='coerce')
             return data
         except FileNotFoundError:
             print(f"Файл {self.file_path} не знайдено.")
-            return pd.DataFrame()  # Повертаємо пустий DataFrame у випадку помилки
+            return pd.DataFrame()  

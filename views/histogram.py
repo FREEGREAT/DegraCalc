@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt  # Add this line at the top of scatter_plot.py
+import matplotlib.pyplot as plt  
 
 from .base_plot import BasePlot
 
