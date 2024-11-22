@@ -1,0 +1,63 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">save_art</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab4%5Cutils%5Csave_art.py">c:\users\blxxd\documents\github\degracalc\lab4\utils\save_art.py</a></td></tr></table>
+    <p><span class="code">Модуль&nbsp;для&nbsp;збереження&nbsp;ASCII-фігур&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+Функція&nbsp;`save_art_to_file`&nbsp;дозволяє&nbsp;зберегти&nbsp;згенеровану&nbsp;фігуру&nbsp;у&nbsp;вигляді&nbsp;ASCII-арту&nbsp;у&nbsp;текстовий&nbsp;файл.&nbsp;<br>
+Це&nbsp;корисно&nbsp;для&nbsp;подальшого&nbsp;перегляду,&nbsp;друку&nbsp;або&nbsp;використання&nbsp;в&nbsp;інших&nbsp;програмах.<br>
+&nbsp;<br>
+Functions:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-save_art_to_file">save_art_to_file</a>(art,&nbsp;file_name="ascii_art.txt"):&nbsp;Зберігає&nbsp;ASCII-фігуру&nbsp;у&nbsp;файл.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="os.html">os</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-save_art_to_file"><strong>save_art_to_file</strong></a>(art, file_name='ascii_art.txt')</dt><dd><span class="code">Зберігає&nbsp;згенеровану&nbsp;ASCII-фігуру&nbsp;у&nbsp;файл&nbsp;у&nbsp;директорії&nbsp;../../results/lab4.<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;art&nbsp;(list[list[int]]):&nbsp;Список&nbsp;списків,&nbsp;що&nbsp;представляє&nbsp;фігуру&nbsp;у&nbsp;вигляді&nbsp;матриці,&nbsp;де:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`1`&nbsp;означає&nbsp;символ&nbsp;заповнення&nbsp;(за&nbsp;замовчуванням&nbsp;'@').<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`0`&nbsp;означає&nbsp;порожній&nbsp;простір&nbsp;(пробіл).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;file_name&nbsp;(str):&nbsp;Ім'я&nbsp;файлу,&nbsp;у&nbsp;який&nbsp;буде&nbsp;збережено&nbsp;фігуру.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;За&nbsp;замовчуванням&nbsp;—&nbsp;"ascii_art.txt".<br>
+&nbsp;<br>
+Workflow:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;Визначення&nbsp;шляху&nbsp;до&nbsp;директорії&nbsp;для&nbsp;збереження&nbsp;файлу&nbsp;(`../../results/lab4`).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;Створення&nbsp;директорії,&nbsp;якщо&nbsp;вона&nbsp;не&nbsp;існує.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;Формування&nbsp;ASCII-арту&nbsp;зі&nbsp;списку&nbsp;списків:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`1`&nbsp;конвертується&nbsp;у&nbsp;символ&nbsp;`@`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`0`&nbsp;конвертується&nbsp;у&nbsp;пробіл.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;4.&nbsp;Запис&nbsp;рядків&nbsp;у&nbsp;файл.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;Виведення&nbsp;повідомлення&nbsp;про&nbsp;успішне&nbsp;збереження.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Exception:&nbsp;Виводить&nbsp;повідомлення&nbsp;про&nbsp;будь-яку&nbsp;помилку,&nbsp;що&nbsp;виникла&nbsp;під&nbsp;час&nbsp;збереження.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;art&nbsp;=&nbsp;[<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0,&nbsp;1,&nbsp;0],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1,&nbsp;1,&nbsp;1],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0,&nbsp;1,&nbsp;0]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;<a href="#-save_art_to_file">save_art_to_file</a>(art,&nbsp;"diamond.txt")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Фігуру&nbsp;збережено&nbsp;у&nbsp;файл:&nbsp;../../results/lab4/diamond.txt<br>
+&nbsp;<br>
+File&nbsp;Format:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;ASCII-фігура&nbsp;записується&nbsp;у&nbsp;файл,&nbsp;де&nbsp;кожен&nbsp;рядок&nbsp;відповідає&nbsp;одному&nbsp;рядку&nbsp;матриці.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Символи&nbsp;`@`&nbsp;та&nbsp;пробіли&nbsp;використовуються&nbsp;для&nbsp;формування&nbsp;візуального&nbsp;зображення.<br>
+&nbsp;<br>
+Notes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Шлях&nbsp;до&nbsp;файлу&nbsp;будується&nbsp;відносно&nbsp;розташування&nbsp;цього&nbsp;модуля.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Якщо&nbsp;файл&nbsp;вже&nbsp;існує,&nbsp;він&nbsp;буде&nbsp;перезаписаний.</span></dd></dl>
+</td></tr></table>

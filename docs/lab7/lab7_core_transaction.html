@@ -1,0 +1,92 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">transaction</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab7%5Ccore%5Ctransaction.py">c:\users\blxxd\documents\github\degracalc\lab7\core\transaction.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="os.html">os</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="transaction.html#Transactions">Transactions</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Transactions">class <strong>Transactions</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Клас&nbsp;для&nbsp;управління&nbsp;історією&nbsp;запитів&nbsp;і&nbsp;їх&nbsp;збереження&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+Атрибути:<br>
+---------<br>
+-&nbsp;history&nbsp;(list):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Список&nbsp;для&nbsp;зберігання&nbsp;історії&nbsp;запитів.&nbsp;Кожен&nbsp;запис&nbsp;містить:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;query&nbsp;(str):&nbsp;Назва&nbsp;запиту.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;result:&nbsp;Результат&nbsp;запиту&nbsp;(будь-який&nbsp;тип).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;timestamp&nbsp;(str):&nbsp;Час&nbsp;створення&nbsp;запиту&nbsp;у&nbsp;форматі&nbsp;ISO.<br>
+&nbsp;<br>
+Методи:<br>
+-------<br>
+-&nbsp;<a href="#Transactions-__init__">__init__</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ініціалізує&nbsp;об'єкт&nbsp;класу&nbsp;`<a href="#Transactions">Transactions</a>`&nbsp;з&nbsp;порожньою&nbsp;історією.<br>
+&nbsp;<br>
+-&nbsp;<a href="#Transactions-register_request">register_request</a>(query,&nbsp;result):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Реєструє&nbsp;новий&nbsp;запит&nbsp;у&nbsp;історії.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Параметри:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;query&nbsp;(str):&nbsp;Назва&nbsp;або&nbsp;зміст&nbsp;запиту.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;result:&nbsp;Результат&nbsp;виконання&nbsp;запиту.<br>
+&nbsp;<br>
+-&nbsp;<a href="#Transactions-save_history">save_history</a>(filename="results/lab7/logs/history.log"):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Зберігає&nbsp;всю&nbsp;історію&nbsp;у&nbsp;лог-файл&nbsp;і&nbsp;очищує&nbsp;список.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Параметри:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;filename&nbsp;(str):&nbsp;Шлях&nbsp;до&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;історії&nbsp;(за&nbsp;замовчуванням&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"results/lab7/logs/history.log").<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Якщо&nbsp;директорія&nbsp;у&nbsp;вказаному&nbsp;шляху&nbsp;не&nbsp;існує,&nbsp;вона&nbsp;створюється.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Transactions-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Ініціалізує&nbsp;історію&nbsp;запитів&nbsp;як&nbsp;порожній&nbsp;список.</span></dd></dl>
+
+<dl><dt><a name="Transactions-register_request"><strong>register_request</strong></a>(self, query, result)</dt><dd><span class="code">Реєструє&nbsp;запит&nbsp;у&nbsp;списку&nbsp;історії.<br>
+&nbsp;<br>
+Параметри:<br>
+-&nbsp;query&nbsp;(str):&nbsp;Запит&nbsp;або&nbsp;ім'я&nbsp;ресурсу.<br>
+-&nbsp;result:&nbsp;Результат&nbsp;виконання&nbsp;запиту&nbsp;(тип&nbsp;даних&nbsp;необмежений).<br>
+&nbsp;<br>
+Додає&nbsp;у&nbsp;`history`&nbsp;словник&nbsp;із&nbsp;полями&nbsp;`query`,&nbsp;`result`&nbsp;та&nbsp;поточним&nbsp;часом.</span></dd></dl>
+
+<dl><dt><a name="Transactions-save_history"><strong>save_history</strong></a>(self, filename='results/lab7/logs/history.log')</dt><dd><span class="code">Зберігає&nbsp;історію&nbsp;запитів&nbsp;у&nbsp;лог-файл.<br>
+&nbsp;<br>
+Параметри:<br>
+-&nbsp;filename&nbsp;(str):&nbsp;Шлях&nbsp;до&nbsp;файлу,&nbsp;куди&nbsp;буде&nbsp;збережено&nbsp;історію&nbsp;(за&nbsp;замовчуванням&nbsp;<br>
+&nbsp;&nbsp;"results/lab7/logs/history.log").<br>
+&nbsp;<br>
+Опис:<br>
+-&nbsp;Створює&nbsp;вказану&nbsp;директорію,&nbsp;якщо&nbsp;вона&nbsp;не&nbsp;існує.<br>
+-&nbsp;Записує&nbsp;кожен&nbsp;елемент&nbsp;`history`&nbsp;у&nbsp;файл&nbsp;з&nbsp;форматованими&nbsp;даними&nbsp;(час,&nbsp;запит,&nbsp;результат).<br>
+-&nbsp;Очищує&nbsp;список&nbsp;`history`&nbsp;після&nbsp;збереження.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>

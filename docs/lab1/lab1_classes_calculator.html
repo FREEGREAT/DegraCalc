@@ -1,0 +1,146 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">calculator</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab1%5Cclasses%5Ccalculator.py">c:\users\blxxd\documents\github\degracalc\lab1\classes\calculator.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="math.html">math</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="calculator.html#Calculator">Calculator</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Calculator">class <strong>Calculator</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;<a href="#Calculator">Calculator</a>&nbsp;для&nbsp;виконання&nbsp;базових&nbsp;математичних&nbsp;операцій,&nbsp;збереження&nbsp;результатів&nbsp;у&nbsp;пам'яті&nbsp;<br>
+та&nbsp;ведення&nbsp;історії&nbsp;обчислень.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Calculator-Add"><strong>Add</strong></a>(self, a, b)</dt><dd><span class="code">Додає&nbsp;два&nbsp;числа.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;(float):&nbsp;Перше&nbsp;число.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;(float):&nbsp;Друге&nbsp;число.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;Результат&nbsp;додавання.</span></dd></dl>
+
+<dl><dt><a name="Calculator-Div"><strong>Div</strong></a>(self, a, b)</dt><dd><span class="code">Ділить&nbsp;два&nbsp;числа.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;(float):&nbsp;Ділене.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;(float):&nbsp;Дільник.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;Результат&nbsp;ділення.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ZeroDivisionError:&nbsp;Якщо&nbsp;дільник&nbsp;дорівнює&nbsp;нулю.</span></dd></dl>
+
+<dl><dt><a name="Calculator-Exponentiation"><strong>Exponentiation</strong></a>(self, a, b)</dt><dd><span class="code">Підносить&nbsp;число&nbsp;`a`&nbsp;до&nbsp;степеня&nbsp;`b`.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;(float):&nbsp;Основа.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;(float):&nbsp;Степінь.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;Результат&nbsp;піднесення&nbsp;до&nbsp;степеня.</span></dd></dl>
+
+<dl><dt><a name="Calculator-GetHistory"><strong>GetHistory</strong></a>(self)</dt><dd><span class="code">Повертає&nbsp;історію&nbsp;всіх&nbsp;операцій.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;Список&nbsp;результатів&nbsp;операцій.</span></dd></dl>
+
+<dl><dt><a name="Calculator-MemoryAdd"><strong>MemoryAdd</strong></a>(self, result)</dt><dd><span class="code">Додає&nbsp;значення&nbsp;до&nbsp;пам'яті.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;(float):&nbsp;Значення&nbsp;для&nbsp;додавання&nbsp;до&nbsp;пам'яті.</span></dd></dl>
+
+<dl><dt><a name="Calculator-MemoryClear"><strong>MemoryClear</strong></a>(self)</dt><dd><span class="code">Очищає&nbsp;пам'ять,&nbsp;встановлюючи&nbsp;її&nbsp;значення&nbsp;в&nbsp;0.</span></dd></dl>
+
+<dl><dt><a name="Calculator-MemoryRead"><strong>MemoryRead</strong></a>(self)</dt><dd><span class="code">Зчитує&nbsp;поточне&nbsp;значення&nbsp;пам'яті.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;Значення,&nbsp;збережене&nbsp;в&nbsp;пам'яті.</span></dd></dl>
+
+<dl><dt><a name="Calculator-MemorySave"><strong>MemorySave</strong></a>(self, result)</dt><dd><span class="code">Зберігає&nbsp;результат&nbsp;у&nbsp;пам'яті.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;(float):&nbsp;Значення&nbsp;для&nbsp;збереження&nbsp;в&nbsp;пам'яті.</span></dd></dl>
+
+<dl><dt><a name="Calculator-MemorySub"><strong>MemorySub</strong></a>(self, result)</dt><dd><span class="code">Віднімає&nbsp;значення&nbsp;від&nbsp;пам'яті.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;(float):&nbsp;Значення&nbsp;для&nbsp;віднімання&nbsp;від&nbsp;пам'яті.</span></dd></dl>
+
+<dl><dt><a name="Calculator-Minus"><strong>Minus</strong></a>(self, a, b)</dt><dd><span class="code">Віднімає&nbsp;друге&nbsp;число&nbsp;від&nbsp;першого.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;(float):&nbsp;Перше&nbsp;число.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;(float):&nbsp;Друге&nbsp;число.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;Результат&nbsp;віднімання.</span></dd></dl>
+
+<dl><dt><a name="Calculator-Mod"><strong>Mod</strong></a>(self, a, b)</dt><dd><span class="code">Обчислює&nbsp;залишок&nbsp;від&nbsp;ділення.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;(int):&nbsp;Ділене.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;(int):&nbsp;Дільник.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;Залишок&nbsp;від&nbsp;ділення.</span></dd></dl>
+
+<dl><dt><a name="Calculator-Mul"><strong>Mul</strong></a>(self, a, b)</dt><dd><span class="code">Множить&nbsp;два&nbsp;числа.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;(float):&nbsp;Перше&nbsp;число.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;(float):&nbsp;Друге&nbsp;число.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;Результат&nbsp;множення.</span></dd></dl>
+
+<dl><dt><a name="Calculator-Sqrt"><strong>Sqrt</strong></a>(self, number)</dt><dd><span class="code">Обчислює&nbsp;квадратний&nbsp;корінь&nbsp;числа.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;(float):&nbsp;Число,&nbsp;для&nbsp;якого&nbsp;потрібно&nbsp;обчислити&nbsp;квадратний&nbsp;корінь.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;Квадратний&nbsp;корінь&nbsp;числа.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Якщо&nbsp;число&nbsp;від'ємне.</span></dd></dl>
+
+<dl><dt><a name="Calculator-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Ініціалізує&nbsp;об'єкт&nbsp;калькулятора&nbsp;з&nbsp;початковими&nbsp;значеннями:<br>
+-&nbsp;`a`&nbsp;та&nbsp;`b`&nbsp;(аргументи&nbsp;операцій)&nbsp;встановлені&nbsp;в&nbsp;0.<br>
+-&nbsp;`memory`&nbsp;(пам'ять)&nbsp;встановлена&nbsp;в&nbsp;0.<br>
+-&nbsp;`history`&nbsp;(історія&nbsp;операцій)&nbsp;ініціалізується&nbsp;як&nbsp;порожній&nbsp;список.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>

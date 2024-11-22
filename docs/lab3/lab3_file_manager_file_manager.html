@@ -1,0 +1,67 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">file_manager</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab3%5Cfile_manager%5Cfile_manager.py">c:\users\blxxd\documents\github\degracalc\lab3\file_manager\file_manager.py</a></td></tr></table>
+    <p><span class="code">Модуль&nbsp;для&nbsp;роботи&nbsp;з&nbsp;файлами,&nbsp;що&nbsp;забезпечує&nbsp;збереження&nbsp;вказаного&nbsp;контенту&nbsp;до&nbsp;файлу&nbsp;у&nbsp;заданій&nbsp;директорії.<br>
+&nbsp;<br>
+Клас:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FileManager">FileManager</a>:&nbsp;Клас&nbsp;для&nbsp;управління&nbsp;файлами,&nbsp;включає&nbsp;метод&nbsp;для&nbsp;збереження&nbsp;контенту&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;save_to_file(content,&nbsp;filename):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Зберігає&nbsp;текстовий&nbsp;контент&nbsp;у&nbsp;файл&nbsp;у&nbsp;визначеній&nbsp;директорії.&nbsp;Автоматично&nbsp;створює&nbsp;потрібні&nbsp;директорії,&nbsp;якщо&nbsp;вони&nbsp;не&nbsp;існують.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="os.html">os</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="file_manager.html#FileManager">FileManager</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="FileManager">class <strong>FileManager</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;для&nbsp;управління&nbsp;файлами,&nbsp;який&nbsp;дозволяє&nbsp;зберігати&nbsp;дані&nbsp;у&nbsp;файли&nbsp;у&nbsp;визначеній&nbsp;структурі&nbsp;директорій.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Static methods defined here:<br>
+<dl><dt><a name="FileManager-save_to_file"><strong>save_to_file</strong></a>(content, filename)</dt><dd><span class="code">Зберігає&nbsp;текстовий&nbsp;контент&nbsp;у&nbsp;файл&nbsp;у&nbsp;підпапці&nbsp;`results/lab3`.<br>
+&nbsp;<br>
+Метод&nbsp;створює&nbsp;необхідні&nbsp;директорії,&nbsp;якщо&nbsp;вони&nbsp;відсутні,&nbsp;і&nbsp;зберігає&nbsp;контент&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;content&nbsp;(str):&nbsp;Текстовий&nbsp;контент,&nbsp;який&nbsp;потрібно&nbsp;записати&nbsp;у&nbsp;файл.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;(str):&nbsp;Ім'я&nbsp;файлу,&nbsp;в&nbsp;який&nbsp;буде&nbsp;збережено&nbsp;контент.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;IOError:&nbsp;Якщо&nbsp;виникла&nbsp;помилка&nbsp;під&nbsp;час&nbsp;збереження&nbsp;файлу.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;<a href="#FileManager">FileManager</a>.<a href="#FileManager-save_to_file">save_to_file</a>("Hello,&nbsp;world!",&nbsp;"example.txt")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Файл&nbsp;успішно&nbsp;збережено:&nbsp;/path/to/results/lab3/example.txt</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>

@@ -1,0 +1,66 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">data_analysis</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab8%5Cmodels%5Cdata_analysis.py">c:\users\blxxd\documents\github\degracalc\lab8\models\data_analysis.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="data_analysis.html#DataAnalysis">DataAnalysis</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="DataAnalysis">class <strong>DataAnalysis</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#DataAnalysis">DataAnalysis</a>(data)<br>
+&nbsp;<br>
+Клас&nbsp;для&nbsp;аналізу&nbsp;даних,&nbsp;який&nbsp;дозволяє&nbsp;отримувати&nbsp;екстремальні&nbsp;значення&nbsp;для&nbsp;різних&nbsp;параметрів.<br>
+&nbsp;<br>
+Атрибути:<br>
+----------<br>
+data&nbsp;:&nbsp;pandas.DataFrame<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Дані,&nbsp;які&nbsp;передаються&nbsp;в&nbsp;клас&nbsp;у&nbsp;вигляді&nbsp;DataFrame&nbsp;з&nbsp;інформацією&nbsp;про&nbsp;температуру,&nbsp;вологість,&nbsp;швидкість&nbsp;вітру&nbsp;та&nbsp;опади.<br>
+&nbsp;<br>
+Методи:<br>
+--------<br>
+<a href="#DataAnalysis-get_extreme_values">get_extreme_values</a>()&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Обчислює&nbsp;та&nbsp;повертає&nbsp;екстремальні&nbsp;значення&nbsp;(мінімальні&nbsp;та&nbsp;максимальні)&nbsp;для&nbsp;кількох&nbsp;параметрів:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'Temperature',&nbsp;'Humidity',&nbsp;'WindSpeed',&nbsp;'Rainfall'.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="DataAnalysis-__init__"><strong>__init__</strong></a>(self, data)</dt><dd><span class="code">Ініціалізує&nbsp;клас&nbsp;з&nbsp;наданими&nbsp;даними.<br>
+&nbsp;<br>
+Параметри:<br>
+-----------<br>
+data&nbsp;:&nbsp;pandas.DataFrame<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Дані&nbsp;для&nbsp;аналізу,&nbsp;що&nbsp;містять&nbsp;стовпці&nbsp;'Temperature',&nbsp;'Humidity',&nbsp;'WindSpeed'&nbsp;та&nbsp;'Rainfall'.</span></dd></dl>
+
+<dl><dt><a name="DataAnalysis-get_extreme_values"><strong>get_extreme_values</strong></a>(self)</dt><dd><span class="code">Повертає&nbsp;мінімальні&nbsp;та&nbsp;максимальні&nbsp;значення&nbsp;для&nbsp;різних&nbsp;параметрів.<br>
+&nbsp;<br>
+Повертає:<br>
+--------<br>
+dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Словник&nbsp;з&nbsp;мінімальними&nbsp;та&nbsp;максимальними&nbsp;значеннями&nbsp;для&nbsp;параметрів:&nbsp;'Temperature',&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'Humidity',&nbsp;'WindSpeed'&nbsp;та&nbsp;'Rainfall'.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>

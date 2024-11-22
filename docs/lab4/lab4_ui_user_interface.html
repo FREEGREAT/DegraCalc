@@ -1,0 +1,91 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">user_interface</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab4%5Cui%5Cuser_interface.py">c:\users\blxxd\documents\github\degracalc\lab4\ui\user_interface.py</a></td></tr></table>
+    <p><span class="code">Модуль&nbsp;для&nbsp;отримання&nbsp;вводу&nbsp;від&nbsp;користувача&nbsp;для&nbsp;створення&nbsp;ASCII-фігур.<br>
+&nbsp;<br>
+Цей&nbsp;модуль&nbsp;містить&nbsp;функції&nbsp;для&nbsp;вибору&nbsp;типу&nbsp;фігури,&nbsp;її&nbsp;параметрів,&nbsp;кольору,&nbsp;символу,&nbsp;вирівнювання&nbsp;та&nbsp;рішення&nbsp;про&nbsp;продовження&nbsp;роботи.<br>
+&nbsp;<br>
+Functions:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-get_shape_choice">get_shape_choice</a>()&nbsp;-&gt;&nbsp;str:&nbsp;Повертає&nbsp;вибраний&nbsp;тип&nbsp;фігури.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-get_dimensions_for_rectangle">get_dimensions_for_rectangle</a>()&nbsp;-&gt;&nbsp;tuple[int,&nbsp;int]:&nbsp;Повертає&nbsp;ширину&nbsp;і&nbsp;висоту&nbsp;прямокутника.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-get_size_for_shape">get_size_for_shape</a>()&nbsp;-&gt;&nbsp;int:&nbsp;Повертає&nbsp;розмір&nbsp;фігури.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-get_color_choice">get_color_choice</a>()&nbsp;-&gt;&nbsp;str:&nbsp;Повертає&nbsp;вибраний&nbsp;колір.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-get_symbol_choice">get_symbol_choice</a>()&nbsp;-&gt;&nbsp;str:&nbsp;Повертає&nbsp;символ&nbsp;для&nbsp;малювання.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-get_alignment_choice">get_alignment_choice</a>()&nbsp;-&gt;&nbsp;str:&nbsp;Повертає&nbsp;вибране&nbsp;вирівнювання.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-ask_to_continue">ask_to_continue</a>()&nbsp;-&gt;&nbsp;bool:&nbsp;Повертає&nbsp;`True`,&nbsp;якщо&nbsp;користувач&nbsp;хоче&nbsp;продовжити&nbsp;роботу.</span></p>
+<p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-ask_to_continue"><strong>ask_to_continue</strong></a>()</dt><dd><span class="code">Питає&nbsp;у&nbsp;користувача,&nbsp;чи&nbsp;хоче&nbsp;він&nbsp;створити&nbsp;ще&nbsp;одну&nbsp;фігуру.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;`True`,&nbsp;якщо&nbsp;користувач&nbsp;відповів&nbsp;"так",&nbsp;інакше&nbsp;`False`.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;<a href="#-ask_to_continue">ask_to_continue</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Бажаєте&nbsp;створити&nbsp;ще&nbsp;одну&nbsp;фігуру?&nbsp;(так/ні):&nbsp;так<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True</span></dd></dl>
+ <dl><dt><a name="-get_alignment_choice"><strong>get_alignment_choice</strong></a>()</dt><dd><span class="code">Отримує&nbsp;вибір&nbsp;користувача&nbsp;щодо&nbsp;вирівнювання&nbsp;тексту.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Вирівнювання&nbsp;("left",&nbsp;"center",&nbsp;"right").<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;<a href="#-get_alignment_choice">get_alignment_choice</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Виберіть&nbsp;вирівнювання&nbsp;(left/center/right):&nbsp;center<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'center'</span></dd></dl>
+ <dl><dt><a name="-get_color_choice"><strong>get_color_choice</strong></a>()</dt><dd><span class="code">Отримує&nbsp;вибір&nbsp;користувача&nbsp;щодо&nbsp;кольору.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Колір&nbsp;("purple",&nbsp;"green",&nbsp;"blue",&nbsp;"red",&nbsp;"bw").<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;<a href="#-get_color_choice">get_color_choice</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Виберіть&nbsp;колір&nbsp;(purple/green/blue/red/bw):&nbsp;green<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'green'</span></dd></dl>
+ <dl><dt><a name="-get_dimensions_for_rectangle"><strong>get_dimensions_for_rectangle</strong></a>()</dt><dd><span class="code">Отримує&nbsp;параметри&nbsp;прямокутника:&nbsp;ширину&nbsp;і&nbsp;висоту.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tuple[int,&nbsp;int]:&nbsp;Ширина&nbsp;і&nbsp;висота&nbsp;прямокутника.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;<a href="#-get_dimensions_for_rectangle">get_dimensions_for_rectangle</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Введіть&nbsp;ширину&nbsp;прямокутника:&nbsp;5<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Введіть&nbsp;висоту&nbsp;прямокутника:&nbsp;3<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(5,&nbsp;3)</span></dd></dl>
+ <dl><dt><a name="-get_shape_choice"><strong>get_shape_choice</strong></a>()</dt><dd><span class="code">Отримує&nbsp;вибір&nbsp;користувача&nbsp;щодо&nbsp;типу&nbsp;фігури.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Тип&nbsp;фігури&nbsp;("квадрат",&nbsp;"прямокутник",&nbsp;"трикутник",&nbsp;"ромб",&nbsp;"коло").<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Якщо&nbsp;введене&nbsp;значення&nbsp;не&nbsp;відповідає&nbsp;допустимим&nbsp;варіантам.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;<a href="#-get_shape_choice">get_shape_choice</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Виберіть&nbsp;фігуру&nbsp;(квадрат/прямокутник/трикутник/ромб/коло):&nbsp;квадрат<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'квадрат'</span></dd></dl>
+ <dl><dt><a name="-get_size_for_shape"><strong>get_size_for_shape</strong></a>()</dt><dd><span class="code">Отримує&nbsp;розмір&nbsp;для&nbsp;фігур,&nbsp;які&nbsp;мають&nbsp;лише&nbsp;один&nbsp;параметр&nbsp;(наприклад,&nbsp;квадрат,&nbsp;ромб,&nbsp;трикутник).<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;Розмір&nbsp;фігури.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;<a href="#-get_size_for_shape">get_size_for_shape</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Введіть&nbsp;розмір&nbsp;фігури:&nbsp;4<br>
+&nbsp;&nbsp;&nbsp;&nbsp;4</span></dd></dl>
+ <dl><dt><a name="-get_symbol_choice"><strong>get_symbol_choice</strong></a>()</dt><dd><span class="code">Отримує&nbsp;символ&nbsp;для&nbsp;малювання&nbsp;ASCII-фігури.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Символ&nbsp;(один&nbsp;символ).<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;<a href="#-get_symbol_choice">get_symbol_choice</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Введіть&nbsp;символ&nbsp;для&nbsp;малювання&nbsp;(один&nbsp;символ):&nbsp;#<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'#'</span></dd></dl>
+</td></tr></table>

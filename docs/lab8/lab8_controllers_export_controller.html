@@ -1,0 +1,115 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">export_controller</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab8%5Ccontrollers%5Cexport_controller.py">c:\users\blxxd\documents\github\degracalc\lab8\controllers\export_controller.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="export_controller.html#ExportController">ExportController</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ExportController">class <strong>ExportController</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;для&nbsp;керування&nbsp;експортом&nbsp;графіків&nbsp;у&nbsp;різні&nbsp;формати&nbsp;(зображення,&nbsp;HTML).<br>
+&nbsp;<br>
+Методи:<br>
+--------<br>
+<a href="#ExportController-export_plot">export_plot</a>(plot_instance,&nbsp;filename,&nbsp;format="png")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Експортує&nbsp;графік&nbsp;у&nbsp;зазначений&nbsp;файл&nbsp;та&nbsp;формат&nbsp;(за&nbsp;замовчуванням&nbsp;PNG).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Параметри:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-----------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;plot_instance&nbsp;:&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Екземпляр&nbsp;графіка&nbsp;(наприклад,&nbsp;інстанс&nbsp;класу&nbsp;для&nbsp;побудови&nbsp;графіків),&nbsp;який&nbsp;має&nbsp;метод&nbsp;`save`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ім'я&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;графіка.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;format&nbsp;:&nbsp;str,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Формат&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;(за&nbsp;замовчуванням&nbsp;"png").<br>
+&nbsp;<br>
+<a href="#ExportController-export_as_html">export_as_html</a>(plot_instance,&nbsp;filename)&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Експортує&nbsp;графік&nbsp;у&nbsp;HTML&nbsp;формат&nbsp;з&nbsp;використанням&nbsp;методу&nbsp;`save_as_html`&nbsp;класу&nbsp;графіка.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Параметри:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-----------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;plot_instance&nbsp;:&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Екземпляр&nbsp;графіка,&nbsp;який&nbsp;має&nbsp;метод&nbsp;`save_as_html`&nbsp;для&nbsp;експорту&nbsp;в&nbsp;HTML.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ім'я&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;HTML.<br>
+&nbsp;<br>
+<a href="#ExportController-prompt_and_export">prompt_and_export</a>(plot_instance,&nbsp;filename_base,&nbsp;format="png")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Запитує&nbsp;користувача,&nbsp;чи&nbsp;хоче&nbsp;він&nbsp;зберегти&nbsp;графік.&nbsp;Якщо&nbsp;так,&nbsp;зберігає&nbsp;графік&nbsp;у&nbsp;файл.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Параметри:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-----------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;plot_instance&nbsp;:&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Екземпляр&nbsp;графіка,&nbsp;який&nbsp;має&nbsp;методи&nbsp;для&nbsp;збереження&nbsp;графіка.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filename_base&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Базове&nbsp;ім'я&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;(без&nbsp;розширення).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;format&nbsp;:&nbsp;str,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Формат&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;(за&nbsp;замовчуванням&nbsp;"png").<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="ExportController-export_as_html"><strong>export_as_html</strong></a>(self, plot_instance, filename)</dt><dd><span class="code">Експортує&nbsp;графік&nbsp;у&nbsp;формат&nbsp;HTML.<br>
+&nbsp;<br>
+Параметри:<br>
+-----------<br>
+plot_instance&nbsp;:&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Екземпляр&nbsp;графіка,&nbsp;що&nbsp;має&nbsp;метод&nbsp;`save_as_html`&nbsp;для&nbsp;експорту&nbsp;в&nbsp;HTML.<br>
+&nbsp;<br>
+filename&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ім'я&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;HTML.</span></dd></dl>
+
+<dl><dt><a name="ExportController-export_plot"><strong>export_plot</strong></a>(self, plot_instance, filename, format='png')</dt><dd><span class="code">Експортує&nbsp;графік&nbsp;у&nbsp;вказаний&nbsp;файл&nbsp;і&nbsp;формат.<br>
+&nbsp;<br>
+Параметри:<br>
+-----------<br>
+plot_instance&nbsp;:&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Екземпляр&nbsp;графіка,&nbsp;що&nbsp;має&nbsp;метод&nbsp;`save`&nbsp;для&nbsp;збереження.<br>
+&nbsp;<br>
+filename&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ім'я&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;графіка.<br>
+&nbsp;<br>
+format&nbsp;:&nbsp;str,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Формат&nbsp;файлу&nbsp;(за&nbsp;замовчуванням&nbsp;"png").</span></dd></dl>
+
+<dl><dt><a name="ExportController-prompt_and_export"><strong>prompt_and_export</strong></a>(self, plot_instance, filename_base, format='png')</dt><dd><span class="code">Запитує&nbsp;користувача,&nbsp;чи&nbsp;хоче&nbsp;він&nbsp;зберегти&nbsp;графік,&nbsp;і&nbsp;якщо&nbsp;так&nbsp;—&nbsp;експортує&nbsp;його&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+Параметри:<br>
+-----------<br>
+plot_instance&nbsp;:&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Екземпляр&nbsp;графіка,&nbsp;що&nbsp;має&nbsp;методи&nbsp;для&nbsp;збереження&nbsp;графіків.<br>
+&nbsp;<br>
+filename_base&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Базове&nbsp;ім'я&nbsp;файлу&nbsp;(без&nbsp;розширення),&nbsp;яке&nbsp;буде&nbsp;використано&nbsp;при&nbsp;експорті.<br>
+&nbsp;<br>
+format&nbsp;:&nbsp;str,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Формат&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;(за&nbsp;замовчуванням&nbsp;"png").</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>

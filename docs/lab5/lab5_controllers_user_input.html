@@ -1,0 +1,97 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">user_input</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab5%5Ccontrollers%5Cuser_input.py">c:\users\blxxd\documents\github\degracalc\lab5\controllers\user_input.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="user_input.html#UserInput">UserInput</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="UserInput">class <strong>UserInput</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#UserInput">UserInput</a>(cube)<br>
+&nbsp;<br>
+Клас&nbsp;<a href="#UserInput">UserInput</a><br>
+&nbsp;<br>
+Призначення:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Забезпечує&nbsp;взаємодію&nbsp;з&nbsp;користувачем&nbsp;для&nbsp;налаштування&nbsp;параметрів&nbsp;куба,&nbsp;таких&nbsp;як&nbsp;обертання,&nbsp;масштабування,&nbsp;колір,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;початковий&nbsp;розмір&nbsp;і&nbsp;збереження&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+Атрибути:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;cube&nbsp;(Cube):&nbsp;Об'єкт&nbsp;куба,&nbsp;з&nbsp;яким&nbsp;взаємодіє&nbsp;користувач.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;colors&nbsp;(dict):&nbsp;Словник&nbsp;доступних&nbsp;кольорів&nbsp;із&nbsp;ключами&nbsp;(номерами)&nbsp;та&nbsp;значеннями&nbsp;(назвами&nbsp;кольорів).<br>
+&nbsp;<br>
+Методи:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#UserInput-get_next_action">get_next_action</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Запитує&nbsp;у&nbsp;користувача&nbsp;наступну&nbsp;дію.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Вибір&nbsp;користувача&nbsp;(номер&nbsp;опції).<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#UserInput-get_rotation_input">get_rotation_input</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Запитує&nbsp;у&nbsp;користувача&nbsp;кути&nbsp;обертання&nbsp;по&nbsp;осях&nbsp;X&nbsp;та&nbsp;Y&nbsp;і&nbsp;встановлює&nbsp;їх&nbsp;для&nbsp;куба.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#UserInput-get_scale_input">get_scale_input</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Запитує&nbsp;у&nbsp;користувача&nbsp;коефіцієнт&nbsp;масштабування&nbsp;та&nbsp;встановлює&nbsp;його&nbsp;для&nbsp;куба.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#UserInput-get_initial_size">get_initial_size</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Запитує&nbsp;у&nbsp;користувача&nbsp;початкові&nbsp;розміри&nbsp;куба&nbsp;по&nbsp;осях&nbsp;X,&nbsp;Y&nbsp;і&nbsp;Z.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tuple[float,&nbsp;float,&nbsp;float]:&nbsp;Початкові&nbsp;розміри&nbsp;куба&nbsp;(size_x,&nbsp;size_y,&nbsp;size_z).<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#UserInput-change_color">change_color</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Дозволяє&nbsp;користувачеві&nbsp;змінити&nbsp;колір&nbsp;куба,&nbsp;вибравши&nbsp;його&nbsp;зі&nbsp;списку&nbsp;доступних&nbsp;кольорів.<br>
+&nbsp;<br>
+Обробка&nbsp;виключень:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Усі&nbsp;методи&nbsp;обробляють&nbsp;можливі&nbsp;помилки,&nbsp;наприклад,&nbsp;некоректний&nbsp;ввід&nbsp;або&nbsp;проблеми&nbsp;під&nbsp;час&nbsp;виконання&nbsp;операцій,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;і&nbsp;повертають&nbsp;відповідні&nbsp;повідомлення.<br>
+&nbsp;<br>
+Приклад&nbsp;використання:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user_input&nbsp;=&nbsp;<a href="#UserInput">UserInput</a>(cube)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;action&nbsp;=&nbsp;user_input.<a href="#UserInput-get_next_action">get_next_action</a>()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;action&nbsp;==&nbsp;"1":<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user_input.<a href="#UserInput-get_rotation_input">get_rotation_input</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;elif&nbsp;action&nbsp;==&nbsp;"2":<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user_input.<a href="#UserInput-change_color">change_color</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;elif&nbsp;action&nbsp;==&nbsp;"3":<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user_input.<a href="#UserInput-get_scale_input">get_scale_input</a>()<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="UserInput-__init__"><strong>__init__</strong></a>(self, cube)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="UserInput-change_color"><strong>change_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="UserInput-get_initial_size"><strong>get_initial_size</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="UserInput-get_next_action"><strong>get_next_action</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="UserInput-get_rotation_input"><strong>get_rotation_input</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="UserInput-get_scale_input"><strong>get_scale_input</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>

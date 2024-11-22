@@ -1,0 +1,78 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">ascii_art</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab3%5Cascii_art%5Cascii_art.py">c:\users\blxxd\documents\github\degracalc\lab3\ascii_art\ascii_art.py</a></td></tr></table>
+    <p><span class="code">Клас&nbsp;для&nbsp;генерації&nbsp;ASCII-арту&nbsp;за&nbsp;допомогою&nbsp;бібліотеки&nbsp;`pyfiglet`.<br>
+&nbsp;<br>
+Клас&nbsp;дозволяє&nbsp;створювати&nbsp;ASCII-арт&nbsp;на&nbsp;основі&nbsp;заданого&nbsp;тексту,&nbsp;шрифту&nbsp;та&nbsp;символу&nbsp;для&nbsp;заміни&nbsp;символу&nbsp;`_`.&nbsp;Також&nbsp;передбачено&nbsp;можливість&nbsp;отримати&nbsp;список&nbsp;доступних&nbsp;шрифтів.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;(str):&nbsp;Текст,&nbsp;який&nbsp;буде&nbsp;перетворено&nbsp;в&nbsp;ASCII-арт.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;font&nbsp;(str):&nbsp;Назва&nbsp;шрифту&nbsp;для&nbsp;генерації&nbsp;ASCII-арту&nbsp;(за&nbsp;замовчуванням&nbsp;'slant').<br>
+&nbsp;&nbsp;&nbsp;&nbsp;symbol&nbsp;(str):&nbsp;Символ,&nbsp;який&nbsp;замінить&nbsp;символ&nbsp;`_`&nbsp;у&nbsp;згенерованому&nbsp;ASCII-арті&nbsp;(за&nbsp;замовчуванням&nbsp;'_').<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;generate_ascii_art():&nbsp;Генерує&nbsp;ASCII-арт&nbsp;на&nbsp;основі&nbsp;заданих&nbsp;параметрів.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;available_fonts():&nbsp;Повертає&nbsp;список&nbsp;доступних&nbsp;шрифтів&nbsp;для&nbsp;ASCII-арту.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pyfiglet.html">pyfiglet</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="ascii_art.html#AsciiArtGenerator">AsciiArtGenerator</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="AsciiArtGenerator">class <strong>AsciiArtGenerator</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#AsciiArtGenerator">AsciiArtGenerator</a>(text,&nbsp;font='slant',&nbsp;symbol='_')<br>
+&nbsp;<br>
+Клас&nbsp;для&nbsp;генерації&nbsp;ASCII-арту.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="AsciiArtGenerator-__init__"><strong>__init__</strong></a>(self, text, font='slant', symbol='_')</dt><dd><span class="code">Ініціалізує&nbsp;об'єкт&nbsp;генератора&nbsp;ASCII-арту.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;(str):&nbsp;Текст&nbsp;для&nbsp;генерації&nbsp;ASCII-арту.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;font&nbsp;(str,&nbsp;optional):&nbsp;Назва&nbsp;шрифту&nbsp;для&nbsp;генерації&nbsp;(за&nbsp;замовчуванням&nbsp;'slant').<br>
+&nbsp;&nbsp;&nbsp;&nbsp;symbol&nbsp;(str,&nbsp;optional):&nbsp;Символ,&nbsp;який&nbsp;замінить&nbsp;`_`&nbsp;(за&nbsp;замовчуванням&nbsp;'_').</span></dd></dl>
+
+<dl><dt><a name="AsciiArtGenerator-available_fonts"><strong>available_fonts</strong></a>(self)</dt><dd><span class="code">Повертає&nbsp;список&nbsp;доступних&nbsp;шрифтів&nbsp;для&nbsp;ASCII-арту.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;Список&nbsp;назв&nbsp;доступних&nbsp;шрифтів.</span></dd></dl>
+
+<dl><dt><a name="AsciiArtGenerator-generate_ascii_art"><strong>generate_ascii_art</strong></a>(self)</dt><dd><span class="code">Генерує&nbsp;ASCII-арт&nbsp;на&nbsp;основі&nbsp;заданих&nbsp;параметрів.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Згенерований&nbsp;ASCII-арт.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Якщо&nbsp;виникла&nbsp;помилка&nbsp;при&nbsp;генерації&nbsp;ASCII-арту.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
