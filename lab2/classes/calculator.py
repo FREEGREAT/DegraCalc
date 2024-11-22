@@ -3,7 +3,7 @@ import math
 class Calculator:
 
     def Save(self, value):
-        with open('History.txt', 'a') as file:
+        with open('results/lab2/History.txt', 'a') as file:
             file.write(f"{value}\n")
     def Add(self, a, b):
         result = a + b
@@ -38,7 +38,7 @@ class Calculator:
         self.Save(f"{a}^{b} = {result}")
         return result
     def GetHistory(self):
-        with open("History.txt", "r") as file:
+        with open("results/lab2/History.txt", "r") as file:
             return print(file.read())
 
 class Memory(Calculator):
