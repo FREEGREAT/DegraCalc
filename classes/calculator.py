@@ -1,5 +1,4 @@
 class Calculator:
-
 	def __init__(self):
 		self.a = 0
 		self.b = 0
@@ -31,14 +30,6 @@ class Calculator:
 		self.history.append(result)
 		return result
 
-	def Sqrt (self, number):
-		return sqrt(number)
-	
-	def Exponentiation (self,a,b):
-		result = a ** b
-		self.history.append(result)
-		return result
-
 	def MemorySave (self, result):
 		self.memory = result
 
@@ -52,7 +43,7 @@ class Calculator:
 		self.memory = 0
 
 	def MemoryRead (self):
-		return memory
+		return self.memory
 
 	def GetHistory(self):
 		for operations in self.history:
