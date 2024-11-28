@@ -34,15 +34,13 @@ while(True):
 			else : exit()
 		case 2 : calculator.GetHistory()
 		case 3 :
-			
 			match input("Виберіть операцію ( MR | M+ | M- | MC ): ").strip().upper():
 				case "M+" : memory.Add(result)
 				case "M-" : memory.Subtract(result)
 				case "MC" : memory.Clear()
 				case "MR" : print(memory.Read())
 				case _: print("Помилка в роботі з пам'ятю.")
-		case 4:
-			exit()
+		case 4: exit()
 
 	
 
