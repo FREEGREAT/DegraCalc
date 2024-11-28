@@ -197,12 +197,15 @@ Used&nbsp;by&nbsp;<a href="unittest.runner.html#TextTestRunner">TextTestRunner</
 Модуль&nbsp;тестування&nbsp;калькулятора<br>
 &nbsp;<br>
 Призначення:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Цей&nbsp;модуль&nbsp;містить&nbsp;набір&nbsp;юніт-тестів&nbsp;для&nbsp;перевірки&nbsp;функціональності&nbsp;класів&nbsp;`Calculator`&nbsp;та&nbsp;`Memory`,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Цей&nbsp;модуль&nbsp;містить&nbsp;набір&nbsp;юніт-тестів&nbsp;для&nbsp;перевірки&nbsp;функціональності&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;класів&nbsp;`Calculator`&nbsp;та&nbsp;`Memory`,&nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;а&nbsp;також&nbsp;функції&nbsp;`ConvertNumberType`.&nbsp;Використовується&nbsp;бібліотека&nbsp;`unittest`.<br>
 &nbsp;<br>
 Тестовані&nbsp;класи:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`Calculator`:&nbsp;Тести&nbsp;основних&nbsp;арифметичних&nbsp;операцій&nbsp;(додавання,&nbsp;віднімання,&nbsp;множення,&nbsp;ділення).<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`Memory`:&nbsp;Тести&nbsp;роботи&nbsp;з&nbsp;пам'яттю&nbsp;(додавання,&nbsp;віднімання,&nbsp;очищення,&nbsp;читання&nbsp;пам'яті).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`Calculator`:&nbsp;Тести&nbsp;основних&nbsp;арифметичних&nbsp;операцій&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(додавання,&nbsp;віднімання,&nbsp;множення,&nbsp;ділення).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`Memory`:&nbsp;Тести&nbsp;роботи&nbsp;з&nbsp;пам'яттю&nbsp;(додавання,&nbsp;віднімання,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;очищення,&nbsp;читання&nbsp;пам'яті).<br>
 &nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`ConvertNumberType`:&nbsp;Тест&nbsp;обробки&nbsp;некоректних&nbsp;даних.<br>
 &nbsp;<br>
 Тести:<br>
@@ -232,13 +235,14 @@ Used&nbsp;by&nbsp;<a href="unittest.runner.html#TextTestRunner">TextTestRunner</
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;test_memory_clear:&nbsp;Перевірка&nbsp;очищення&nbsp;пам'яті.<br>
 &nbsp;<br>
 Кастомізація&nbsp;виводу:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Класи&nbsp;`<a href="#CustomTextTestResult">CustomTextTestResult</a>`&nbsp;і&nbsp;`<a href="#CustomTextTestRunner">CustomTextTestRunner</a>`&nbsp;змінюють&nbsp;стандартний&nbsp;вивід&nbsp;результатів&nbsp;тестування,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Класи&nbsp;`<a href="#CustomTextTestResult">CustomTextTestResult</a>`&nbsp;і&nbsp;`<a href="#CustomTextTestRunner">CustomTextTestRunner</a>`&nbsp;змінюють&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;стандартний&nbsp;вивід&nbsp;результатів&nbsp;тестування,&nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;додаючи&nbsp;спеціальні&nbsp;повідомлення&nbsp;про&nbsp;успішні&nbsp;тести,&nbsp;помилки&nbsp;або&nbsp;збої.<br>
 &nbsp;<br>
 Запуск:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Запустіть&nbsp;файл&nbsp;для&nbsp;виконання&nbsp;тестів,&nbsp;використовуючи&nbsp;кастомний&nbsp;тестовий&nbsp;раннер&nbsp;із&nbsp;підвищеною&nbsp;інформативністю.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Запустіть&nbsp;файл&nbsp;для&nbsp;виконання&nbsp;тестів,&nbsp;використовуючи&nbsp;кастомний&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;тестовий&nbsp;раннер&nbsp;із&nbsp;підвищеною&nbsp;інформативністю.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Результати&nbsp;тестування&nbsp;будуть&nbsp;відображені&nbsp;в&nbsp;консолі.<br>
-&nbsp;<br>
 Приклад:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;$&nbsp;python&nbsp;test_calculator.py<br>&nbsp;</span></td></tr>
 <tr><td>&nbsp;</td>
@@ -564,7 +568,7 @@ the&nbsp;specified&nbsp;test&nbsp;method's&nbsp;docstring.</span></dd></dl>
 
 <dl><dt><a name="TestCalculator-skipTest"><strong>skipTest</strong></a>(self, reason)</dt><dd><span class="code">Skip&nbsp;this&nbsp;test.</span></dd></dl>
 
-<dl><dt><a name="TestCalculator-subTest"><strong>subTest</strong></a>(self, msg=&lt;object object at 0x000001F016CA2E60&gt;, **params)</dt><dd><span class="code">Return&nbsp;a&nbsp;context&nbsp;manager&nbsp;that&nbsp;will&nbsp;return&nbsp;the&nbsp;enclosed&nbsp;block<br>
+<dl><dt><a name="TestCalculator-subTest"><strong>subTest</strong></a>(self, msg=&lt;object object at 0x00000298C3932E90&gt;, **params)</dt><dd><span class="code">Return&nbsp;a&nbsp;context&nbsp;manager&nbsp;that&nbsp;will&nbsp;return&nbsp;the&nbsp;enclosed&nbsp;block<br>
 of&nbsp;code&nbsp;in&nbsp;a&nbsp;subtest&nbsp;identified&nbsp;by&nbsp;the&nbsp;optional&nbsp;message&nbsp;and<br>
 keyword&nbsp;parameters.&nbsp;&nbsp;A&nbsp;failure&nbsp;in&nbsp;the&nbsp;subtest&nbsp;marks&nbsp;the&nbsp;test<br>
 case&nbsp;as&nbsp;failed&nbsp;but&nbsp;resumes&nbsp;execution&nbsp;at&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;enclosed<br>

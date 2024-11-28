@@ -3,77 +3,13 @@
 <tr class="heading-text decor">
 <td class="title">&nbsp;<br><strong class="title">ErrorHandler</strong></td>
 <td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab2%5Cfunctions%5Cerrorhandler.py">c:\users\blxxd\documents\github\degracalc\lab2\functions\errorhandler.py</a></td></tr></table>
-    <p><span class="code">Модуль&nbsp;для&nbsp;отримання&nbsp;математичних&nbsp;операторів&nbsp;та&nbsp;чисел&nbsp;від&nbsp;користувача.<br>
-&nbsp;<br>
-Функції:<br>
---------<br>
-1.&nbsp;<a href="#-GetOperator">GetOperator</a>():<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Отримує&nbsp;від&nbsp;користувача&nbsp;оператор&nbsp;для&nbsp;математичної&nbsp;операції.&nbsp;Перевіряє&nbsp;коректність&nbsp;введеного&nbsp;оператора.<br>
-&nbsp;<br>
-2.&nbsp;<a href="#-GetNumber">GetNumber</a>():<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Отримує&nbsp;від&nbsp;користувача&nbsp;число.&nbsp;Перевіряє,&nbsp;чи&nbsp;є&nbsp;введене&nbsp;значення&nbsp;числом,&nbsp;і&nbsp;чи&nbsp;не&nbsp;є&nbsp;поле&nbsp;порожнім.<br>
-&nbsp;<br>
-Деталі&nbsp;реалізації:<br>
-------------------<br>
--&nbsp;**GetOperator**:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Приймає&nbsp;від&nbsp;користувача&nbsp;математичний&nbsp;оператор.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Перевіряє,&nbsp;чи&nbsp;є&nbsp;введене&nbsp;значення&nbsp;серед&nbsp;підтримуваних&nbsp;операторів.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Підтримувані&nbsp;оператори:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`+`&nbsp;(додавання)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`-`&nbsp;(віднімання)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`*`&nbsp;(множення)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`/`&nbsp;(ділення)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`√`&nbsp;або&nbsp;`sqrt`&nbsp;(квадратний&nbsp;корінь)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`%`&nbsp;(залишок&nbsp;від&nbsp;ділення)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`**`&nbsp;або&nbsp;`^`&nbsp;(піднесення&nbsp;до&nbsp;степеня).<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;У&nbsp;разі&nbsp;некоректного&nbsp;вводу&nbsp;виводить&nbsp;повідомлення&nbsp;про&nbsp;помилку&nbsp;і&nbsp;повторює&nbsp;запит.<br>
-&nbsp;<br>
--&nbsp;**GetNumber**:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Приймає&nbsp;від&nbsp;користувача&nbsp;числове&nbsp;значення&nbsp;у&nbsp;вигляді&nbsp;рядка.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Перевіряє,&nbsp;чи&nbsp;поле&nbsp;не&nbsp;порожнє.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;У&nbsp;разі&nbsp;порожнього&nbsp;вводу&nbsp;виводить&nbsp;повідомлення&nbsp;про&nbsp;помилку&nbsp;і&nbsp;повторює&nbsp;запит.<br>
-&nbsp;<br>
-Приклади&nbsp;використання:<br>
-----------------------<br>
-&gt;&gt;&gt;&nbsp;operator&nbsp;=&nbsp;<a href="#-GetOperator">GetOperator</a>()<br>
-Select&nbsp;operation&nbsp;(&nbsp;+&nbsp;|&nbsp;-&nbsp;|&nbsp;*&nbsp;|&nbsp;/&nbsp;|&nbsp;√&nbsp;(=&nbsp;sqrt)&nbsp;|&nbsp;%&nbsp;|&nbsp;**&nbsp;(=&nbsp;^)&nbsp;):&nbsp;*<br>
-&gt;&gt;&gt;&nbsp;operator<br>
-'*'<br>
-&nbsp;<br>
-&gt;&gt;&gt;&nbsp;number&nbsp;=&nbsp;<a href="#-GetNumber">GetNumber</a>()<br>
-Введіть&nbsp;число:&nbsp;25<br>
-&gt;&gt;&gt;&nbsp;number<br>
-'25'</span></p>
+    <p></p>
 <p>
 <table class="section">
 <tr class="decor functions-decor heading-text">
 <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
     
 <tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
-<td class="singlecolumn"><dl><dt><a name="-GetNumber"><strong>GetNumber</strong></a>()</dt><dd><span class="code">Отримує&nbsp;від&nbsp;користувача&nbsp;числове&nbsp;значення.<br>
-&nbsp;<br>
-Перевіряє,&nbsp;чи&nbsp;поле&nbsp;вводу&nbsp;не&nbsp;порожнє.&nbsp;Якщо&nbsp;значення&nbsp;не&nbsp;введене,&nbsp;виводить<br>
-повідомлення&nbsp;про&nbsp;помилку&nbsp;і&nbsp;повторює&nbsp;запит.<br>
-&nbsp;<br>
-Returns:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Введене&nbsp;користувачем&nbsp;значення.<br>
-&nbsp;<br>
-Raises:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Якщо&nbsp;значення&nbsp;порожнє.</span></dd></dl>
- <dl><dt><a name="-GetOperator"><strong>GetOperator</strong></a>()</dt><dd><span class="code">Отримує&nbsp;від&nbsp;користувача&nbsp;математичний&nbsp;оператор.<br>
-&nbsp;<br>
-Перевіряє,&nbsp;чи&nbsp;введений&nbsp;оператор&nbsp;є&nbsp;одним&nbsp;із&nbsp;підтримуваних:<br>
--&nbsp;"+"&nbsp;(додавання)<br>
--&nbsp;"-"&nbsp;(віднімання)<br>
--&nbsp;"*"&nbsp;(множення)<br>
--&nbsp;"/"&nbsp;(ділення)<br>
--&nbsp;"√"&nbsp;або&nbsp;"sqrt"&nbsp;(квадратний&nbsp;корінь)<br>
--&nbsp;"%"&nbsp;(залишок&nbsp;від&nbsp;ділення)<br>
--&nbsp;"**"&nbsp;або&nbsp;"^"&nbsp;(піднесення&nbsp;до&nbsp;степеня).<br>
-&nbsp;<br>
-Returns:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Коректний&nbsp;математичний&nbsp;оператор.<br>
-&nbsp;<br>
-Raises:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Якщо&nbsp;введений&nbsp;оператор&nbsp;не&nbsp;є&nbsp;підтримуваним.</span></dd></dl>
+<td class="singlecolumn"><dl><dt><a name="-GetNumber"><strong>GetNumber</strong></a>()</dt></dl>
+ <dl><dt><a name="-GetOperator"><strong>GetOperator</strong></a>()</dt></dl>
 </td></tr></table>

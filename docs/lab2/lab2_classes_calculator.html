@@ -3,66 +3,7 @@
 <tr class="heading-text decor">
 <td class="title">&nbsp;<br><strong class="title">calculator</strong></td>
 <td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab2%5Cclasses%5Ccalculator.py">c:\users\blxxd\documents\github\degracalc\lab2\classes\calculator.py</a></td></tr></table>
-    <p><span class="code">Модуль&nbsp;калькулятора&nbsp;з&nbsp;підтримкою&nbsp;збереження&nbsp;історії&nbsp;та&nbsp;роботи&nbsp;з&nbsp;пам'яттю.<br>
-&nbsp;<br>
-Цей&nbsp;модуль&nbsp;надає&nbsp;функціонал&nbsp;для&nbsp;виконання&nbsp;базових&nbsp;арифметичних&nbsp;операцій&nbsp;з&nbsp;автоматичним&nbsp;збереженням&nbsp;історії&nbsp;у&nbsp;файл&nbsp;`History.txt`.&nbsp;<br>
-Також&nbsp;реалізовано&nbsp;клас&nbsp;`<a href="#Memory">Memory</a>`,&nbsp;який&nbsp;дозволяє&nbsp;працювати&nbsp;з&nbsp;проміжними&nbsp;результатами&nbsp;в&nbsp;пам'яті.<br>
-&nbsp;<br>
-Класи:<br>
---------<br>
-1.&nbsp;<a href="#Calculator">Calculator</a>:<br>
-&nbsp;&nbsp;&nbsp;Базовий&nbsp;клас&nbsp;для&nbsp;виконання&nbsp;математичних&nbsp;операцій.&nbsp;Історія&nbsp;обчислень&nbsp;зберігається&nbsp;у&nbsp;файл&nbsp;`History.txt`.<br>
-&nbsp;<br>
-2.&nbsp;<a href="#Memory">Memory</a>:<br>
-&nbsp;&nbsp;&nbsp;Наслідуваний&nbsp;від&nbsp;`<a href="#Calculator">Calculator</a>`&nbsp;клас&nbsp;для&nbsp;роботи&nbsp;з&nbsp;пам'яттю.&nbsp;Дозволяє&nbsp;зберігати,&nbsp;додавати,&nbsp;віднімати&nbsp;та&nbsp;очищувати&nbsp;значення&nbsp;в&nbsp;пам'яті.<br>
-&nbsp;<br>
-Методи:<br>
--------<br>
-Клас&nbsp;`<a href="#Calculator">Calculator</a>`:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Save(value):&nbsp;Зберігає&nbsp;текстове&nbsp;представлення&nbsp;операції&nbsp;у&nbsp;файл&nbsp;`History.txt`.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Add(a,&nbsp;b):&nbsp;Виконує&nbsp;додавання&nbsp;двох&nbsp;чисел.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Subtract(a,&nbsp;b):&nbsp;Виконує&nbsp;віднімання&nbsp;другого&nbsp;числа&nbsp;від&nbsp;першого.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Multiply(a,&nbsp;b):&nbsp;Виконує&nbsp;множення&nbsp;двох&nbsp;чисел.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Divide(a,&nbsp;b):&nbsp;Виконує&nbsp;ділення&nbsp;двох&nbsp;чисел.&nbsp;Обробляє&nbsp;ділення&nbsp;на&nbsp;нуль.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Mod(a,&nbsp;b):&nbsp;Обчислює&nbsp;залишок&nbsp;від&nbsp;ділення&nbsp;першого&nbsp;числа&nbsp;на&nbsp;друге.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;SquareRoot(number):&nbsp;Обчислює&nbsp;квадратний&nbsp;корінь&nbsp;з&nbsp;числа.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Exponentiate(a,&nbsp;b):&nbsp;Підносить&nbsp;перше&nbsp;число&nbsp;до&nbsp;степеня&nbsp;другого.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;GetHistory():&nbsp;Читає&nbsp;та&nbsp;виводить&nbsp;історію&nbsp;обчислень&nbsp;з&nbsp;файлу&nbsp;`History.txt`.<br>
-&nbsp;<br>
-Клас&nbsp;`<a href="#Memory">Memory</a>`:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Add(value):&nbsp;Додає&nbsp;значення&nbsp;до&nbsp;поточного&nbsp;в&nbsp;пам'яті.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Subtract(value):&nbsp;Віднімає&nbsp;значення&nbsp;від&nbsp;поточного&nbsp;в&nbsp;пам'яті.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Clear():&nbsp;Очищає&nbsp;пам'ять,&nbsp;встановлюючи&nbsp;значення&nbsp;на&nbsp;0.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Read():&nbsp;Читає&nbsp;поточне&nbsp;значення&nbsp;з&nbsp;пам'яті.<br>
-&nbsp;<br>
-Деталі&nbsp;реалізації:<br>
-------------------<br>
-1.&nbsp;**Історія**:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Усі&nbsp;результати&nbsp;операцій&nbsp;автоматично&nbsp;записуються&nbsp;в&nbsp;файл&nbsp;`History.txt`.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Формат&nbsp;запису:&nbsp;`&lt;операція&gt;&nbsp;=&nbsp;&lt;результат&gt;`.&nbsp;У&nbsp;разі&nbsp;помилки&nbsp;(наприклад,&nbsp;ділення&nbsp;на&nbsp;нуль)&nbsp;також&nbsp;записується&nbsp;відповідний&nbsp;рядок.<br>
-&nbsp;<br>
-2.&nbsp;**Пам'ять**:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Значення&nbsp;в&nbsp;пам'яті&nbsp;доступне&nbsp;лише&nbsp;в&nbsp;рамках&nbsp;класу&nbsp;`<a href="#Memory">Memory</a>`.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Запис&nbsp;до&nbsp;файлу&nbsp;відбувається&nbsp;при&nbsp;кожній&nbsp;зміні&nbsp;значення&nbsp;в&nbsp;пам'яті.<br>
-&nbsp;<br>
-Приклади&nbsp;використання:<br>
-----------------------<br>
-&gt;&gt;&gt;&nbsp;calc&nbsp;=&nbsp;<a href="#Calculator">Calculator</a>()<br>
-&gt;&gt;&gt;&nbsp;calc.Add(3,&nbsp;5)<br>
-8<br>
-&gt;&gt;&gt;&nbsp;calc.SquareRoot(16)<br>
-4.0<br>
-&gt;&gt;&gt;&nbsp;calc.GetHistory()<br>
-3&nbsp;+&nbsp;5&nbsp;=&nbsp;8<br>
-Square&nbsp;root&nbsp;of&nbsp;16&nbsp;=&nbsp;4.0<br>
-&nbsp;<br>
-&gt;&gt;&gt;&nbsp;mem&nbsp;=&nbsp;<a href="#Memory">Memory</a>()<br>
-&gt;&gt;&gt;&nbsp;mem.Add(10)<br>
-10<br>
-&gt;&gt;&gt;&nbsp;mem.Subtract(3)<br>
-7<br>
-&gt;&gt;&gt;&nbsp;mem.Clear()<br>
-0</span></p>
+    <p></p>
 <p>
 <table class="section">
 <tr class="decor pkg-content-decor heading-text">
@@ -94,30 +35,25 @@ Square&nbsp;root&nbsp;of&nbsp;16&nbsp;=&nbsp;4.0<br>
 <tr class="decor title-decor heading-text">
 <td class="section-title" colspan=3>&nbsp;<br><a name="Calculator">class <strong>Calculator</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
     
-<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
-<td class="decor title-decor" colspan=2><span class="code">Базовий&nbsp;клас&nbsp;для&nbsp;виконання&nbsp;математичних&nbsp;операцій&nbsp;із&nbsp;підтримкою&nbsp;збереження&nbsp;історії&nbsp;у&nbsp;файл.<br>&nbsp;</span></td></tr>
-<tr><td>&nbsp;</td>
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
 <td class="singlecolumn">Methods defined here:<br>
-<dl><dt><a name="Calculator-Add"><strong>Add</strong></a>(self, a, b)</dt><dd><span class="code">Додає&nbsp;два&nbsp;числа&nbsp;та&nbsp;зберігає&nbsp;результат&nbsp;у&nbsp;файл.</span></dd></dl>
+<dl><dt><a name="Calculator-Add"><strong>Add</strong></a>(self, a, b)</dt></dl>
 
-<dl><dt><a name="Calculator-Divide"><strong>Divide</strong></a>(self, a, b)</dt><dd><span class="code">Ділить&nbsp;перше&nbsp;число&nbsp;на&nbsp;друге.&nbsp;Якщо&nbsp;дільник&nbsp;дорівнює&nbsp;0,&nbsp;повертає&nbsp;помилку.</span></dd></dl>
+<dl><dt><a name="Calculator-Divide"><strong>Divide</strong></a>(self, a, b)</dt></dl>
 
-<dl><dt><a name="Calculator-Exponentiate"><strong>Exponentiate</strong></a>(self, a, b)</dt><dd><span class="code">Підносить&nbsp;перше&nbsp;число&nbsp;до&nbsp;степеня&nbsp;другого&nbsp;та&nbsp;зберігає&nbsp;результат&nbsp;у&nbsp;файл.</span></dd></dl>
+<dl><dt><a name="Calculator-Exponentiate"><strong>Exponentiate</strong></a>(self, a, b)</dt></dl>
 
-<dl><dt><a name="Calculator-GetHistory"><strong>GetHistory</strong></a>(self)</dt><dd><span class="code">Виводить&nbsp;на&nbsp;екран&nbsp;історію&nbsp;виконаних&nbsp;операцій,&nbsp;що&nbsp;зберігається&nbsp;у&nbsp;файлі&nbsp;`History.txt`.</span></dd></dl>
+<dl><dt><a name="Calculator-GetHistory"><strong>GetHistory</strong></a>(self)</dt></dl>
 
-<dl><dt><a name="Calculator-Mod"><strong>Mod</strong></a>(self, a, b)</dt><dd><span class="code">Обчислює&nbsp;залишок&nbsp;від&nbsp;ділення&nbsp;першого&nbsp;числа&nbsp;на&nbsp;друге&nbsp;та&nbsp;зберігає&nbsp;результат&nbsp;у&nbsp;файл.</span></dd></dl>
+<dl><dt><a name="Calculator-Mod"><strong>Mod</strong></a>(self, a, b)</dt></dl>
 
-<dl><dt><a name="Calculator-Multiply"><strong>Multiply</strong></a>(self, a, b)</dt><dd><span class="code">Множить&nbsp;два&nbsp;числа&nbsp;та&nbsp;зберігає&nbsp;результат&nbsp;у&nbsp;файл.</span></dd></dl>
+<dl><dt><a name="Calculator-Multiply"><strong>Multiply</strong></a>(self, a, b)</dt></dl>
 
-<dl><dt><a name="Calculator-Save"><strong>Save</strong></a>(self, value)</dt><dd><span class="code">Зберігає&nbsp;результат&nbsp;операції&nbsp;в&nbsp;файл&nbsp;`History.txt`.<br>
-&nbsp;<br>
-Args:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;(str):&nbsp;Рядок&nbsp;з&nbsp;описом&nbsp;операції&nbsp;та&nbsp;її&nbsp;результату.</span></dd></dl>
+<dl><dt><a name="Calculator-Save"><strong>Save</strong></a>(self, value)</dt></dl>
 
-<dl><dt><a name="Calculator-SquareRoot"><strong>SquareRoot</strong></a>(self, number)</dt><dd><span class="code">Обчислює&nbsp;квадратний&nbsp;корінь&nbsp;з&nbsp;числа&nbsp;та&nbsp;зберігає&nbsp;результат&nbsp;у&nbsp;файл.</span></dd></dl>
+<dl><dt><a name="Calculator-SquareRoot"><strong>SquareRoot</strong></a>(self, number)</dt></dl>
 
-<dl><dt><a name="Calculator-Subtract"><strong>Subtract</strong></a>(self, a, b)</dt><dd><span class="code">Віднімає&nbsp;друге&nbsp;число&nbsp;від&nbsp;першого&nbsp;та&nbsp;зберігає&nbsp;результат&nbsp;у&nbsp;файл.</span></dd></dl>
+<dl><dt><a name="Calculator-Subtract"><strong>Subtract</strong></a>(self, a, b)</dt></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -132,9 +68,7 @@ Data descriptors defined here:<br>
 <tr class="decor title-decor heading-text">
 <td class="section-title" colspan=3>&nbsp;<br><a name="Memory">class <strong>Memory</strong></a>(<a href="calculator.html#Calculator">Calculator</a>)</td></tr>
     
-<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
-<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;для&nbsp;роботи&nbsp;з&nbsp;пам'яттю,&nbsp;який&nbsp;розширює&nbsp;функціонал&nbsp;базового&nbsp;калькулятора.<br>&nbsp;</span></td></tr>
-<tr><td>&nbsp;</td>
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
 <td class="singlecolumn"><dl><dt>Method resolution order:</dt>
 <dd><a href="calculator.html#Memory">Memory</a></dd>
 <dd><a href="calculator.html#Calculator">Calculator</a></dd>
@@ -142,34 +76,31 @@ Data descriptors defined here:<br>
 </dl>
 <hr>
 Methods defined here:<br>
-<dl><dt><a name="Memory-Add"><strong>Add</strong></a>(self, value)</dt><dd><span class="code">Додає&nbsp;значення&nbsp;до&nbsp;пам'яті&nbsp;та&nbsp;зберігає&nbsp;дію&nbsp;в&nbsp;історії.</span></dd></dl>
+<dl><dt><a name="Memory-Add"><strong>Add</strong></a>(self, value)</dt></dl>
 
-<dl><dt><a name="Memory-Clear"><strong>Clear</strong></a>(self)</dt><dd><span class="code">Очищає&nbsp;пам'ять,&nbsp;встановлюючи&nbsp;значення&nbsp;на&nbsp;0,&nbsp;і&nbsp;зберігає&nbsp;дію&nbsp;в&nbsp;історії.</span></dd></dl>
+<dl><dt><a name="Memory-Clear"><strong>Clear</strong></a>(self)</dt></dl>
 
-<dl><dt><a name="Memory-Read"><strong>Read</strong></a>(self)</dt><dd><span class="code">Повертає&nbsp;поточне&nbsp;значення&nbsp;з&nbsp;пам'яті.</span></dd></dl>
+<dl><dt><a name="Memory-Read"><strong>Read</strong></a>(self)</dt></dl>
 
-<dl><dt><a name="Memory-Subtract"><strong>Subtract</strong></a>(self, value)</dt><dd><span class="code">Віднімає&nbsp;значення&nbsp;з&nbsp;пам'яті&nbsp;та&nbsp;зберігає&nbsp;дію&nbsp;в&nbsp;історії.</span></dd></dl>
+<dl><dt><a name="Memory-Subtract"><strong>Subtract</strong></a>(self, value)</dt></dl>
 
-<dl><dt><a name="Memory-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Ініціалізує&nbsp;пам'ять&nbsp;зі&nbsp;значенням&nbsp;0.</span></dd></dl>
+<dl><dt><a name="Memory-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
 
 <hr>
 Methods inherited from <a href="calculator.html#Calculator">Calculator</a>:<br>
-<dl><dt><a name="Memory-Divide"><strong>Divide</strong></a>(self, a, b)</dt><dd><span class="code">Ділить&nbsp;перше&nbsp;число&nbsp;на&nbsp;друге.&nbsp;Якщо&nbsp;дільник&nbsp;дорівнює&nbsp;0,&nbsp;повертає&nbsp;помилку.</span></dd></dl>
+<dl><dt><a name="Memory-Divide"><strong>Divide</strong></a>(self, a, b)</dt></dl>
 
-<dl><dt><a name="Memory-Exponentiate"><strong>Exponentiate</strong></a>(self, a, b)</dt><dd><span class="code">Підносить&nbsp;перше&nbsp;число&nbsp;до&nbsp;степеня&nbsp;другого&nbsp;та&nbsp;зберігає&nbsp;результат&nbsp;у&nbsp;файл.</span></dd></dl>
+<dl><dt><a name="Memory-Exponentiate"><strong>Exponentiate</strong></a>(self, a, b)</dt></dl>
 
-<dl><dt><a name="Memory-GetHistory"><strong>GetHistory</strong></a>(self)</dt><dd><span class="code">Виводить&nbsp;на&nbsp;екран&nbsp;історію&nbsp;виконаних&nbsp;операцій,&nbsp;що&nbsp;зберігається&nbsp;у&nbsp;файлі&nbsp;`History.txt`.</span></dd></dl>
+<dl><dt><a name="Memory-GetHistory"><strong>GetHistory</strong></a>(self)</dt></dl>
 
-<dl><dt><a name="Memory-Mod"><strong>Mod</strong></a>(self, a, b)</dt><dd><span class="code">Обчислює&nbsp;залишок&nbsp;від&nbsp;ділення&nbsp;першого&nbsp;числа&nbsp;на&nbsp;друге&nbsp;та&nbsp;зберігає&nbsp;результат&nbsp;у&nbsp;файл.</span></dd></dl>
+<dl><dt><a name="Memory-Mod"><strong>Mod</strong></a>(self, a, b)</dt></dl>
 
-<dl><dt><a name="Memory-Multiply"><strong>Multiply</strong></a>(self, a, b)</dt><dd><span class="code">Множить&nbsp;два&nbsp;числа&nbsp;та&nbsp;зберігає&nbsp;результат&nbsp;у&nbsp;файл.</span></dd></dl>
+<dl><dt><a name="Memory-Multiply"><strong>Multiply</strong></a>(self, a, b)</dt></dl>
 
-<dl><dt><a name="Memory-Save"><strong>Save</strong></a>(self, value)</dt><dd><span class="code">Зберігає&nbsp;результат&nbsp;операції&nbsp;в&nbsp;файл&nbsp;`History.txt`.<br>
-&nbsp;<br>
-Args:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;(str):&nbsp;Рядок&nbsp;з&nbsp;описом&nbsp;операції&nbsp;та&nbsp;її&nbsp;результату.</span></dd></dl>
+<dl><dt><a name="Memory-Save"><strong>Save</strong></a>(self, value)</dt></dl>
 
-<dl><dt><a name="Memory-SquareRoot"><strong>SquareRoot</strong></a>(self, number)</dt><dd><span class="code">Обчислює&nbsp;квадратний&nbsp;корінь&nbsp;з&nbsp;числа&nbsp;та&nbsp;зберігає&nbsp;результат&nbsp;у&nbsp;файл.</span></dd></dl>
+<dl><dt><a name="Memory-SquareRoot"><strong>SquareRoot</strong></a>(self, number)</dt></dl>
 
 <hr>
 Data descriptors inherited from <a href="calculator.html#Calculator">Calculator</a>:<br>

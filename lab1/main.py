@@ -1,4 +1,3 @@
-
 """
 Програма для роботи з калькулятором через текстовий інтерфейс.
 
@@ -59,7 +58,7 @@ calculator = Calculator()
 result = 0
 
 while True:
-	action = int( input("Select action: \n 1. Calculating\n 2. See History\n 3. Memory\n 4. Exit : "))
+	action = int( input("Select action: \n 1. Calculating\n 3. Memory\n 4. Exit : "))
 	match action:
 		case 1:
 			operator = input("Select operation( + | - | * | / | √ (= sqrt) | % | ** (= ^) ): ")
@@ -95,8 +94,6 @@ while True:
 			if(input("Do you want to continue work? (Y/N)") == "Y") : continue
 			else : break
 		case 2:
-			calculator.GetHistory()
-		case 3:
 			operator = input("Select operation( MS | MR | M+ | M- | MC ): ")
 			match operator:
 				case "MS":

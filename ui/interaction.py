@@ -1,4 +1,3 @@
-
 """
 Цей модуль містить функції для взаємодії з користувачем, включаючи:
 - Вибір лабораторної роботи для запуску.
@@ -90,11 +89,9 @@ def run_tests():
     і unit_test.py (у папці lab7/tests).
     Виводить результати з кастомним форматуванням.
     """
-    base_dir = os.path.dirname(os.path.abspath(__file__))  # Поточний шлях до interaction.py
+    base_dir = os.path.dirname(os.path.abspath(__file__)) 
 
-    # Шлях до test_calculator.py
     test_calculator_path = os.path.join(base_dir, "..", "lab6", "tests", "test_calculator.py")
-    # Шлях до unit_test.py
     unit_test_path = os.path.join(base_dir, "..", "lab7", "tests", "unit_test.py")
 
     for test_path in [test_calculator_path, unit_test_path]:

@@ -3,7 +3,25 @@
 <tr class="heading-text decor">
 <td class="title">&nbsp;<br><strong class="title">data_loader</strong></td>
 <td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab8%5Cmodels%5Cdata_loader.py">c:\users\blxxd\documents\github\degracalc\lab8\models\data_loader.py</a></td></tr></table>
-    <p></p>
+    <p><span class="code">Клас&nbsp;для&nbsp;завантаження&nbsp;та&nbsp;перевірки&nbsp;даних&nbsp;з&nbsp;CSV&nbsp;файлу.<br>
+&nbsp;<br>
+Атрибути:<br>
+----------<br>
+file_path&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Шлях&nbsp;до&nbsp;CSV&nbsp;файлу,&nbsp;з&nbsp;якого&nbsp;будуть&nbsp;завантажуватися&nbsp;дані.<br>
+&nbsp;<br>
+Методи:<br>
+--------<br>
+load_data()&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Завантажує&nbsp;дані&nbsp;з&nbsp;CSV&nbsp;файлу,&nbsp;перевіряє&nbsp;наявність&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;необхідних&nbsp;колонок&nbsp;та&nbsp;конвертує&nbsp;стовпець&nbsp;'Date'&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;в&nbsp;формат&nbsp;datetime.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Якщо&nbsp;файл&nbsp;не&nbsp;знайдено&nbsp;або&nbsp;відсутні&nbsp;необхідні&nbsp;колонки,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;виводиться&nbsp;повідомлення&nbsp;про&nbsp;помилку.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;--------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pandas.DataFrame<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Завантажені&nbsp;дані,&nbsp;або&nbsp;порожній&nbsp;DataFrame&nbsp;у&nbsp;випадку&nbsp;помилки.</span></p>
 <p>
 <table class="section">
 <tr class="decor pkg-content-decor heading-text">
@@ -33,22 +51,7 @@
 <tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
 <td class="decor title-decor" colspan=2><span class="code"><a href="#DataLoader">DataLoader</a>(file_path)<br>
 &nbsp;<br>
-Клас&nbsp;для&nbsp;завантаження&nbsp;та&nbsp;перевірки&nbsp;даних&nbsp;з&nbsp;CSV&nbsp;файлу.<br>
-&nbsp;<br>
-Атрибути:<br>
-----------<br>
-file_path&nbsp;:&nbsp;str<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Шлях&nbsp;до&nbsp;CSV&nbsp;файлу,&nbsp;з&nbsp;якого&nbsp;будуть&nbsp;завантажуватися&nbsp;дані.<br>
-&nbsp;<br>
-Методи:<br>
---------<br>
-<a href="#DataLoader-load_data">load_data</a>()&nbsp;:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Завантажує&nbsp;дані&nbsp;з&nbsp;CSV&nbsp;файлу,&nbsp;перевіряє&nbsp;наявність&nbsp;необхідних&nbsp;колонок&nbsp;та&nbsp;конвертує&nbsp;стовпець&nbsp;'Date'&nbsp;в&nbsp;формат&nbsp;datetime.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Якщо&nbsp;файл&nbsp;не&nbsp;знайдено&nbsp;або&nbsp;відсутні&nbsp;необхідні&nbsp;колонки,&nbsp;виводиться&nbsp;повідомлення&nbsp;про&nbsp;помилку.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Повертає:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;--------<br>
-&nbsp;&nbsp;&nbsp;&nbsp;pandas.DataFrame<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Завантажені&nbsp;дані,&nbsp;або&nbsp;порожній&nbsp;DataFrame&nbsp;у&nbsp;випадку&nbsp;помилки.<br>&nbsp;</span></td></tr>
+Клас&nbsp;для&nbsp;завантаження&nbsp;та&nbsp;перевірки&nbsp;даних&nbsp;з&nbsp;CSV&nbsp;файлу.<br>&nbsp;</span></td></tr>
 <tr><td>&nbsp;</td>
 <td class="singlecolumn">Methods defined here:<br>
 <dl><dt><a name="DataLoader-__init__"><strong>__init__</strong></a>(self, file_path)</dt><dd><span class="code">Ініціалізує&nbsp;клас&nbsp;з&nbsp;шляхом&nbsp;до&nbsp;файлу.<br>
@@ -60,8 +63,10 @@ file_path&nbsp;:&nbsp;str<br>
 
 <dl><dt><a name="DataLoader-load_data"><strong>load_data</strong></a>(self)</dt><dd><span class="code">Завантажує&nbsp;дані&nbsp;з&nbsp;CSV&nbsp;файлу.<br>
 &nbsp;<br>
-Перевіряє&nbsp;наявність&nbsp;необхідних&nbsp;колонок:&nbsp;'Date',&nbsp;'Temperature',&nbsp;'Humidity',&nbsp;'WindSpeed',&nbsp;'Rainfall'.<br>
-Якщо&nbsp;хоча&nbsp;б&nbsp;одна&nbsp;колонка&nbsp;відсутня,&nbsp;піднімається&nbsp;помилка&nbsp;ValueError.<br>
+Перевіряє&nbsp;наявність&nbsp;необхідних&nbsp;колонок:&nbsp;<br>
+'Date',&nbsp;'Temperature',&nbsp;'Humidity',&nbsp;'WindSpeed',&nbsp;'Rainfall'.<br>
+Якщо&nbsp;хоча&nbsp;б&nbsp;одна&nbsp;колонка&nbsp;відсутня,&nbsp;<br>
+піднімається&nbsp;помилка&nbsp;ValueError.<br>
 &nbsp;<br>
 Також&nbsp;конвертує&nbsp;стовпець&nbsp;'Date'&nbsp;в&nbsp;тип&nbsp;datetime,&nbsp;з&nbsp;обробкою&nbsp;помилок&nbsp;при&nbsp;конвертації.<br>
 &nbsp;<br>

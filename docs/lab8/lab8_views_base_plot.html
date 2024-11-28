@@ -3,7 +3,20 @@
 <tr class="heading-text decor">
 <td class="title">&nbsp;<br><strong class="title">base_plot</strong></td>
 <td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab8%5Cviews%5Cbase_plot.py">c:\users\blxxd\documents\github\degracalc\lab8\views\base_plot.py</a></td></tr></table>
-    <p></p>
+    <p><span class="code">Цей&nbsp;модуль&nbsp;містить&nbsp;клас&nbsp;<a href="#BasePlot">BasePlot</a>&nbsp;для&nbsp;створення,&nbsp;<br>
+відображення&nbsp;та&nbsp;збереження&nbsp;графіків&nbsp;<br>
+за&nbsp;допомогою&nbsp;бібліотеки&nbsp;Matplotlib.<br>
+&nbsp;<br>
+Клас&nbsp;<a href="#BasePlot">BasePlot</a>&nbsp;надає&nbsp;базову&nbsp;функціональність&nbsp;<br>
+для&nbsp;роботи&nbsp;з&nbsp;графіками,&nbsp;включаючи&nbsp;методи&nbsp;<br>
+для&nbsp;їх&nbsp;відображення&nbsp;на&nbsp;екрані<br>
+та&nbsp;збереження&nbsp;в&nbsp;різних&nbsp;<br>
+форматах&nbsp;файлів&nbsp;(наприклад,&nbsp;PNG,&nbsp;PDF,&nbsp;JPG).<br>
+&nbsp;<br>
+Методи:<br>
+--------<br>
+-&nbsp;show():&nbsp;Відображає&nbsp;графік&nbsp;у&nbsp;вікні.<br>
+-&nbsp;save(filename,&nbsp;img_format="png"):&nbsp;Зберігає&nbsp;графік&nbsp;у&nbsp;файл&nbsp;з&nbsp;вказаним&nbsp;ім'ям&nbsp;і&nbsp;форматом.</span></p>
 <p>
 <table class="section">
 <tr class="decor pkg-content-decor heading-text">
@@ -31,21 +44,22 @@
 <td class="section-title" colspan=3>&nbsp;<br><a name="BasePlot">class <strong>BasePlot</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
     
 <tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
-<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;для&nbsp;базового&nbsp;створення&nbsp;та&nbsp;збереження&nbsp;графіків&nbsp;за&nbsp;допомогою&nbsp;бібліотеки&nbsp;Matplotlib.<br>
-&nbsp;<br>
+<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;для&nbsp;базового&nbsp;створення&nbsp;та&nbsp;збереження&nbsp;<br>
+графіків&nbsp;за&nbsp;допомогою&nbsp;бібліотеки&nbsp;Matplotlib.<br>
 Методи:<br>
 --------<br>
 <a href="#BasePlot-show">show</a>()&nbsp;:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Відображає&nbsp;графік&nbsp;у&nbsp;вікні&nbsp;за&nbsp;допомогою&nbsp;Matplotlib&nbsp;та&nbsp;закриває&nbsp;його&nbsp;після&nbsp;відображення.<br>
-&nbsp;<br>
 <a href="#BasePlot-save">save</a>(filename,&nbsp;format="png")&nbsp;:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Зберігає&nbsp;поточний&nbsp;графік&nbsp;у&nbsp;файл&nbsp;з&nbsp;вказаним&nbsp;ім'ям&nbsp;та&nbsp;форматом&nbsp;(за&nbsp;замовчуванням&nbsp;PNG).<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Параметри:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;filename&nbsp;(str):&nbsp;Ім'я&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;графіка.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;format&nbsp;(str):&nbsp;Формат&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;(наприклад,&nbsp;"png",&nbsp;"pdf",&nbsp;"jpg").&nbsp;За&nbsp;замовчуванням&nbsp;використовується&nbsp;"png".<br>&nbsp;</span></td></tr>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;format&nbsp;(str):&nbsp;Формат&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(наприклад,&nbsp;"png",&nbsp;"pdf",&nbsp;"jpg").&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;За&nbsp;замовчуванням&nbsp;використовується&nbsp;"png".<br>&nbsp;</span></td></tr>
 <tr><td>&nbsp;</td>
 <td class="singlecolumn">Methods defined here:<br>
-<dl><dt><a name="BasePlot-save"><strong>save</strong></a>(self, filename, format='png')</dt><dd><span class="code">Зберігає&nbsp;поточний&nbsp;графік&nbsp;у&nbsp;файл.<br>
+<dl><dt><a name="BasePlot-save"><strong>save</strong></a>(self, filename, img_format='png')</dt><dd><span class="code">Зберігає&nbsp;поточний&nbsp;графік&nbsp;у&nbsp;файл.<br>
 &nbsp;<br>
 Параметри:<br>
 -----------<br>

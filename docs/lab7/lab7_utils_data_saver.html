@@ -3,7 +3,8 @@
 <tr class="heading-text decor">
 <td class="title">&nbsp;<br><strong class="title">data_saver</strong></td>
 <td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab7%5Cutils%5Cdata_saver.py">c:\users\blxxd\documents\github\degracalc\lab7\utils\data_saver.py</a></td></tr></table>
-    <p></p>
+    <p><span class="code">Клас&nbsp;для&nbsp;збереження&nbsp;даних&nbsp;у&nbsp;різних&nbsp;форматах&nbsp;<br>
+(JSON,&nbsp;CSV,&nbsp;TXT).</span></p>
 <p>
 <table class="section">
 <tr class="decor pkg-content-decor heading-text">
@@ -32,13 +33,64 @@
 <tr class="decor title-decor heading-text">
 <td class="section-title" colspan=3>&nbsp;<br><a name="DataSaver">class <strong>DataSaver</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
     
-<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;для&nbsp;збереження&nbsp;даних&nbsp;у&nbsp;різних&nbsp;форматах&nbsp;<br>
+(JSON,&nbsp;CSV,&nbsp;TXT).<br>
+Цей&nbsp;клас&nbsp;забезпечує&nbsp;функціональність&nbsp;для&nbsp;збереження&nbsp;<br>
+даних&nbsp;у&nbsp;файли&nbsp;різних&nbsp;форматів.<br>
+Збереження&nbsp;відбувається&nbsp;в&nbsp;папку&nbsp;"results/lab7"&nbsp;(за&nbsp;замовчуванням),&nbsp;<br>
+або&nbsp;вказану&nbsp;користувачем&nbsp;підкаталог.<br>
+Методи:<br>
+--------<br>
+<a href="#DataSaver-save_to_json">save_to_json</a>(data,&nbsp;filename="data.json")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Зберігає&nbsp;дані&nbsp;в&nbsp;форматі&nbsp;JSON.<br>
+<a href="#DataSaver-save_to_csv">save_to_csv</a>(data,&nbsp;filename="data.csv")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Зберігає&nbsp;дані&nbsp;в&nbsp;форматі&nbsp;CSV.<br>
+<a href="#DataSaver-save_to_txt">save_to_txt</a>(data,&nbsp;filename="data.txt")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Зберігає&nbsp;дані&nbsp;в&nbsp;текстовому&nbsp;форматі.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
 <td class="singlecolumn">Static methods defined here:<br>
-<dl><dt><a name="DataSaver-save_to_csv"><strong>save_to_csv</strong></a>(data, filename='data.csv')</dt></dl>
+<dl><dt><a name="DataSaver-save_to_csv"><strong>save_to_csv</strong></a>(data, filename='data.csv')</dt><dd><span class="code">Зберігає&nbsp;дані&nbsp;в&nbsp;форматі&nbsp;CSV.<br>
+Параметри:<br>
+-----------<br>
+data&nbsp;:&nbsp;list&nbsp;of&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Дані&nbsp;для&nbsp;збереження,&nbsp;де&nbsp;кожен&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;елемент&nbsp;списку&nbsp;є&nbsp;словником.<br>
+filename&nbsp;:&nbsp;str,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ім'я&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;даних.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;За&nbsp;замовчуванням&nbsp;"data.csv".<br>
+Виводить:<br>
+---------<br>
+str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Повідомлення&nbsp;про&nbsp;успішне&nbsp;збереження&nbsp;файлу,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;або&nbsp;попередження,&nbsp;якщо&nbsp;дані&nbsp;відсутні.</span></dd></dl>
 
-<dl><dt><a name="DataSaver-save_to_json"><strong>save_to_json</strong></a>(data, filename='data.json')</dt></dl>
+<dl><dt><a name="DataSaver-save_to_json"><strong>save_to_json</strong></a>(data, filename='data.json')</dt><dd><span class="code">Зберігає&nbsp;дані&nbsp;в&nbsp;форматі&nbsp;JSON.<br>
+Параметри:<br>
+-----------<br>
+data&nbsp;:&nbsp;dict&nbsp;or&nbsp;list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Дані&nbsp;для&nbsp;збереження.<br>
+filename&nbsp;:&nbsp;str,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ім'я&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;даних.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;За&nbsp;замовчуванням&nbsp;"data.json".<br>
+Виводить:<br>
+---------<br>
+str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Повідомлення&nbsp;про&nbsp;успішне&nbsp;збереження&nbsp;файлу.</span></dd></dl>
 
-<dl><dt><a name="DataSaver-save_to_txt"><strong>save_to_txt</strong></a>(data, filename='data.txt')</dt></dl>
+<dl><dt><a name="DataSaver-save_to_txt"><strong>save_to_txt</strong></a>(data, filename='data.txt')</dt><dd><span class="code">Зберігає&nbsp;дані&nbsp;в&nbsp;текстовому&nbsp;форматі.<br>
+Параметри:<br>
+-----------<br>
+data&nbsp;:&nbsp;list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Дані&nbsp;для&nbsp;збереження&nbsp;у<br>
+&nbsp;&nbsp;&nbsp;&nbsp;вигляді&nbsp;списку&nbsp;рядків.<br>
+filename&nbsp;:&nbsp;str,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ім'я&nbsp;файлу&nbsp;для&nbsp;збереження&nbsp;даних.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;За&nbsp;замовчуванням&nbsp;"data.txt".<br>
+Виводить:<br>
+---------<br>
+str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Повідомлення&nbsp;про&nbsp;успішне&nbsp;збереження&nbsp;файлу.</span></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>

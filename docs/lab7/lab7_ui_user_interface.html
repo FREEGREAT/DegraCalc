@@ -1,0 +1,111 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">user_interface</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cblxxd%5Cdocuments%5Cgithub%5Cdegracalc%5Clab7%5Cui%5Cuser_interface.py">c:\users\blxxd\documents\github\degracalc\lab7\ui\user_interface.py</a></td></tr></table>
+    <p><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;Модуль&nbsp;<a href="#UserInterface">UserInterface</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;---------------------&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Цей&nbsp;модуль&nbsp;реалізує&nbsp;клас&nbsp;`<a href="#UserInterface">UserInterface</a>`,&nbsp;<br>
+який&nbsp;забезпечує&nbsp;інтерактивну&nbsp;взаємодію&nbsp;з&nbsp;користувачем,<br>
+отримання&nbsp;даних&nbsp;із&nbsp;репозиторію,&nbsp;обробку&nbsp;введення&nbsp;<br>
+користувача&nbsp;та&nbsp;збереження&nbsp;даних&nbsp;у&nbsp;різних&nbsp;форматах.<br>
+Імпортовані&nbsp;модулі<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-------------------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`ui.console_view.ConsoleView`:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Для&nbsp;форматованого&nbsp;відображення&nbsp;даних&nbsp;у&nbsp;консолі.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`api.repository.DataRepository`:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Для&nbsp;отримання&nbsp;та&nbsp;пошуку&nbsp;даних&nbsp;через&nbsp;API.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`core.transaction.Transactions`:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Для&nbsp;реєстрації&nbsp;транзакцій&nbsp;і&nbsp;збереження&nbsp;історії.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`core.user_input_parser.UserInputParser`:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Для&nbsp;перевірки&nbsp;та&nbsp;парсингу&nbsp;введення&nbsp;користувача&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(наприклад,&nbsp;номер&nbsp;телефону&nbsp;чи&nbsp;дата).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`core.error_handler.ErrorHandler`,&nbsp;`APIError`,&nbsp;`UserInputError`:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Для&nbsp;обробки&nbsp;загальних&nbsp;та&nbsp;специфічних&nbsp;помилок.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;`utils.data_saver.DataSaver`:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Для&nbsp;збереження&nbsp;даних&nbsp;у&nbsp;форматах&nbsp;JSON,&nbsp;CSV&nbsp;або&nbsp;TXT.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Класи:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;------</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="user_interface.html#UserInterface">UserInterface</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="UserInterface">class <strong>UserInterface</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#UserInterface">UserInterface</a>(repository,&nbsp;transactions)<br>
+&nbsp;<br>
+Клас&nbsp;для&nbsp;взаємодії&nbsp;з&nbsp;користувачем&nbsp;через&nbsp;консольний&nbsp;інтерфейс.<br>
+&nbsp;<br>
+Атрибути:<br>
+---------<br>
+-&nbsp;repository&nbsp;(DataRepository):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Репозиторій&nbsp;для&nbsp;отримання&nbsp;даних&nbsp;із&nbsp;API.<br>
+-&nbsp;transactions&nbsp;(Transactions):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Менеджер&nbsp;для&nbsp;реєстрації&nbsp;транзакцій.<br>
+-&nbsp;view&nbsp;(ConsoleView):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Інструмент&nbsp;для&nbsp;відображення&nbsp;даних&nbsp;у&nbsp;форматі&nbsp;таблиць.<br>
+&nbsp;<br>
+Методи:<br>
+-------<br>
+-&nbsp;<a href="#UserInterface-__init__">__init__</a>(repository,&nbsp;transactions):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ініціалізує&nbsp;об’єкт&nbsp;`<a href="#UserInterface">UserInterface</a>`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Параметри:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;repository:&nbsp;Екземпляр&nbsp;`DataRepository`&nbsp;для&nbsp;роботи&nbsp;з&nbsp;API.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;transactions:&nbsp;Екземпляр&nbsp;`Transactions`&nbsp;для&nbsp;обробки&nbsp;історії&nbsp;запитів.<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+-&nbsp;<a href="#UserInterface-save_data">save_data</a>(data):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Зберігає&nbsp;дані&nbsp;у&nbsp;вибраному&nbsp;користувачем&nbsp;форматі:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;JSON,&nbsp;CSV&nbsp;або&nbsp;TXT.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Якщо&nbsp;формат&nbsp;некоректний,&nbsp;дані&nbsp;не&nbsp;зберігаються.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="UserInterface-__init__"><strong>__init__</strong></a>(self, repository, transactions)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="UserInterface-save_data"><strong>save_data</strong></a>(self, data)</dt><dd><span class="code">Зберігає&nbsp;дані&nbsp;у&nbsp;файл,&nbsp;вибраний&nbsp;користувачем,&nbsp;<br>
+у&nbsp;одному&nbsp;з&nbsp;підтримуваних&nbsp;форматів:&nbsp;JSON,&nbsp;CSV&nbsp;або&nbsp;TXT.<br>
+Користувач&nbsp;вибирає&nbsp;формат&nbsp;через&nbsp;введення&nbsp;з&nbsp;консолі.<br>
+Параметри:<br>
+-----------<br>
+data&nbsp;:&nbsp;list&nbsp;of&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Дані&nbsp;для&nbsp;збереження,&nbsp;що&nbsp;передаються&nbsp;у&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;вигляді&nbsp;списку&nbsp;словників.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Кожен&nbsp;словник&nbsp;представляє&nbsp;один&nbsp;запис&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(рядок)&nbsp;з&nbsp;даними.<br>
+Виводить&nbsp;повідомлення&nbsp;про&nbsp;успішне&nbsp;збереження&nbsp;або&nbsp;помилку,&nbsp;<br>
+якщо&nbsp;формат&nbsp;вибраний&nbsp;некоректно.</span></dd></dl>
+
+<dl><dt><a name="UserInterface-start"><strong>start</strong></a>(self)</dt><dd><span class="code">-&nbsp;<a href="#UserInterface-start">start</a>():<br>
+Запускає&nbsp;головний&nbsp;цикл&nbsp;взаємодії&nbsp;з&nbsp;користувачем:<br>
+-&nbsp;Отримує&nbsp;ресурс&nbsp;(наприклад,&nbsp;"posts",&nbsp;"users")&nbsp;або&nbsp;вводить&nbsp;інші&nbsp;дані.<br>
+-&nbsp;Виконує&nbsp;запит&nbsp;до&nbsp;API&nbsp;для&nbsp;отримання&nbsp;даних.<br>
+-&nbsp;Відображає&nbsp;дані&nbsp;через&nbsp;`ConsoleView`.<br>
+-&nbsp;Реєструє&nbsp;транзакцію.<br>
+-&nbsp;Дозволяє&nbsp;зберегти&nbsp;отримані&nbsp;дані&nbsp;у&nbsp;форматах&nbsp;JSON,&nbsp;CSV&nbsp;або&nbsp;TXT.<br>
+&nbsp;<br>
+Обробляє&nbsp;помилки&nbsp;введення&nbsp;користувача,&nbsp;API-запитів&nbsp;або&nbsp;інші&nbsp;винятки.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
